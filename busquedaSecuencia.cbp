@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="inicio_julio_2021_cmake"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="principal">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/principal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/./include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 principal"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="principal/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/principal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/./include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 principal/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testSecuencia">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testSecuencia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testSecuencia"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testSecuencia/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testSecuencia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testSecuencia/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testDiagrama">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testDiagrama" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testDiagrama"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testDiagrama/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testDiagrama" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testDiagrama/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testLector">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testLector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testLector"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testLector/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testLector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testLector/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testVariable">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testVariable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testVariable"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testVariable/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testVariable" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testVariable/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMatriz">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testMatriz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testMatriz"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMatriz/fast">
+				<Option output="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testMatriz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 testMatriz/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/aStarSearch.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/colaPrioridad.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/diagrama.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/lector.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/matriz.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/opcionInversion.h">
+			<Option target="testSecuencia"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/operacion.h">
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/secuenciaEnteros.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/secuenciaOperaciones.h">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/utilidades.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/include/variable.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/aStarSearch.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/colaPrioridad.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/diagrama.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/estado.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/lector.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/matriz.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+			<Option target="testMatriz"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/principal.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/secuenciaEnteros.cpp">
+			<Option target="principal"/>
+			<Option target="testSecuencia"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+			<Option target="testMatriz"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/secuenciaOperaciones.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/utilidades.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/src/variable.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+			<Option target="testVariable"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testDiagrama.cpp">
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testLector.cpp">
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testMatriz.cpp">
+			<Option target="testMatriz"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testSecuencia.cpp">
+			<Option target="testSecuencia"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/testVariable.cpp">
+			<Option target="testVariable"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

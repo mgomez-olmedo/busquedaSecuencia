@@ -1,0 +1,10 @@
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/CMakeFiles/rebuild_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/CMakeFiles/edit_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/CMakeFiles/principal.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/edit_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/testSecuencia.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/testDiagrama.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/rebuild_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/testLector.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/testVariable.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/CMakeFiles/testMatriz.dir
