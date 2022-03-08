@@ -1,0 +1,28 @@
+\hypertarget{test_lector_8cpp_source}{}\doxysection{test\+Lector.\+cpp}
+\label{test_lector_8cpp_source}\index{test/testLector.cpp@{test/testLector.cpp}}
+\mbox{\hyperlink{test_lector_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{lector_8h}{lector.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00005}00005 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00013}\mbox{\hyperlink{test_lector_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{00013}} \textcolor{keywordtype}{int} \mbox{\hyperlink{test_lector_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} * argv[])\{}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00014}00014    \textcolor{comment}{// se crea objeto de la clase Lector para un archivo}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00015}00015    \mbox{\hyperlink{class_lector}{Lector}} lector(\textcolor{stringliteral}{"{}../../data/car.pro"{}});}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00017}00017    \textcolor{comment}{// se muestra el diagrama generado}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00018}00018    \mbox{\hyperlink{class_diagrama}{Diagrama}} diag = lector.\mbox{\hyperlink{class_lector_a0bef09f9528256833be2d8a53121dd65}{obtenerDiagrama}}();}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00019}00019    cout << diag;}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00021}00021    \textcolor{comment}{// se ordenan las variables de decision}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00022}00022    cout << \textcolor{stringliteral}{"{}a agregar arcos de memoria: "{}} << endl;}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00023}00023    diag.\mbox{\hyperlink{class_diagrama_a3fdd98befd80c7b92699b5f67124a18c}{agregarArcosMemoria}}();}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00025}00025    \textcolor{comment}{// se muestra el diagrama tras agregar los arcos de memoria}}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00026}00026    cout << \textcolor{stringliteral}{"{}diagrama tras agregar arcos de memoria"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00027}00027    cout << diag;}
+\DoxyCodeLine{\Hypertarget{test_lector_8cpp_source_l00028}00028 \}}
+
+\end{DoxyCode}

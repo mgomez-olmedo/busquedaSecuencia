@@ -1,0 +1,194 @@
+\hypertarget{cola_prioridad_8cpp_source}{}\doxysection{cola\+Prioridad.\+cpp}
+\label{cola_prioridad_8cpp_source}\index{src/colaPrioridad.cpp@{src/colaPrioridad.cpp}}
+\mbox{\hyperlink{cola_prioridad_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cola_prioridad_8h}{colaPrioridad.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00004}00004 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00010}\mbox{\hyperlink{class_cola_prioridad_aefafb7ac500b929a0aa511deb08d8446}{00010}} \mbox{\hyperlink{class_cola_prioridad_a8e7bb5e019d2f9e876011074a82c13f3}{ColaPrioridad::ColaPrioridad}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cola_prioridad}{ColaPrioridad}} \& origen)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00011}00011    \textcolor{comment}{// se reserva espacio para tantos estados como indique origen}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00012}00012    \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}} = \mbox{\hyperlink{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}{reservar}}(origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}});}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00014}00014    \textcolor{comment}{// se asignan los estados uno a uno}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00015}00015    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00016}00016       \textcolor{comment}{// implica el operador de asignacion de Estado}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00017}00017       \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i] = origen.\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00018}00018    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00020}00020    \textcolor{comment}{// se copia el valor de numero de estados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00021}00021    \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} = origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00023}00023    \textcolor{comment}{// se copian las estadisticas de uso}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00024}00024    \mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}} = origen.\mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00025}00025    \mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}} = origen.\mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00033}\mbox{\hyperlink{class_cola_prioridad_a3b5b3b041f06481f16122d94522d4541}{00033}} \mbox{\hyperlink{class_cola_prioridad}{ColaPrioridad}} \& \mbox{\hyperlink{class_cola_prioridad_a3b5b3b041f06481f16122d94522d4541}{ColaPrioridad::operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cola_prioridad}{ColaPrioridad}} \& origen)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00034}00034    \textcolor{comment}{// se libera espacio previo}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00035}00035    \mbox{\hyperlink{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00037}00037    \textcolor{comment}{// se reserva espacio para tantos estados como indique origen}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00038}00038    \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}} = \mbox{\hyperlink{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}{reservar}}(origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}});}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00040}00040    \textcolor{comment}{// se asignan los estados uno a uno}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00041}00041    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00042}00042       \textcolor{comment}{// implica el operador de asignacion de Estado}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00043}00043       \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i] = origen.\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00044}00044    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00046}00046    \textcolor{comment}{// se copia el valor de numero de estados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00047}00047    \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} = origen.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00049}00049    \textcolor{comment}{// se copian las estadisticas de uso}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00050}00050    \mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}} = origen.\mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00051}00051    \mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}} = origen.\mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00053}00053    \textcolor{comment}{// se devuelve referencia a this}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00054}00054    \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00062}\mbox{\hyperlink{class_cola_prioridad_a09e83a452cb8abb2ba0550b377b665f8}{00062}} \mbox{\hyperlink{class_cola_prioridad}{ColaPrioridad}} \& \mbox{\hyperlink{class_cola_prioridad_a09e83a452cb8abb2ba0550b377b665f8}{ColaPrioridad::operator+=}}(\mbox{\hyperlink{class_estado}{Estado}} \& estado)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00063}00063    \textcolor{comment}{// se precisa insercion en el lugar adecuado y solo se hace la}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00064}00064    \textcolor{comment}{// insercion si no hay ya estado igual al pasado como argumento}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00065}00065    \textcolor{comment}{// (representando al mismo diagrama)}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00066}00066    \textcolor{keywordtype}{int} indiceEstado = \mbox{\hyperlink{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}{buscar}}(estado);}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00068}00068    \textcolor{comment}{// si no se encuentra, debe insertarse en la posicion correspondiente}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00069}00069    \textcolor{comment}{// de acuerdo al coste}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00070}00070    \textcolor{keywordflow}{if}(indiceEstado == -\/1)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00071}00071       \mbox{\hyperlink{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}{insertar}}(estado);}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00072}00072    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00073}00073    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00074}00074       \textcolor{comment}{// actualizar los datos de los estados para seguir solo}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00075}00075       \textcolor{comment}{// con el mas prometedor}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00076}00076       \mbox{\hyperlink{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}{actualizar}}(\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[indiceEstado], estado);}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00077}00077    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00079}00079    \textcolor{comment}{// se devuelve la referencia a this}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00080}00080    \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00087}\mbox{\hyperlink{class_cola_prioridad_a0e3237e8fbd0c9fe8fa173116de7ab78}{00087}} \mbox{\hyperlink{class_estado}{Estado}} \mbox{\hyperlink{class_cola_prioridad_a0e3237e8fbd0c9fe8fa173116de7ab78}{ColaPrioridad::extraer}}()\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00088}00088    \textcolor{comment}{// se almacena el estado que esta en la posicion 0}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00089}00089    \mbox{\hyperlink{class_estado}{Estado}} primero = \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[0];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00091}00091    \textcolor{comment}{// se reserva espacio para almacenar los estados que se}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00092}00092    \textcolor{comment}{// quedaran almacenados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00093}00093    \mbox{\hyperlink{class_estado}{Estado}} * espacio = \mbox{\hyperlink{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}{reservar}}((\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}-\/1));}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00095}00095    \textcolor{comment}{// se copian los estados desde 1 en adelante}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00096}00096    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1; i < \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00097}00097       espacio[i-\/1] = \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00098}00098    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00100}00100    \textcolor{comment}{// se libera el espacio previo}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00101}00101    \mbox{\hyperlink{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00103}00103    \textcolor{comment}{// se hace que cola apunte a espacio}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00104}00104    \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}} = espacio;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00106}00106    \textcolor{comment}{// se decrementa el numero de estados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00107}00107    \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00109}00109    \textcolor{comment}{// se devuelve el estado}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00110}00110    \textcolor{keywordflow}{return} primero;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00111}00111 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00118}\mbox{\hyperlink{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}{00118}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}{ColaPrioridad::buscar}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_estado}{Estado}} \& referencia)\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00119}00119    \textcolor{keywordtype}{int} indice = -\/1;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00120}00120    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} \&\& indice == -\/1; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00121}00121       \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i] == referencia)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00122}00122          indice = i;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00123}00123       \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00124}00124    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00126}00126    \textcolor{comment}{// se devuelve el valor de indice}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00127}00127    \textcolor{keywordflow}{return} indice;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00128}00128 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00135}\mbox{\hyperlink{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}{00135}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}{ColaPrioridad::insertar}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_estado}{Estado}} \& estado)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00136}00136    \textcolor{comment}{// se busca el indice del estado cuyo valor de coste es ya}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00137}00137    \textcolor{comment}{// mayor que el del estado pasado como argumento}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00138}00138    \textcolor{keywordtype}{int} indiceInsercion=0;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00139}00139    \textcolor{keywordtype}{bool} continuar = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00140}00140    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} \&\& continuar; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00141}00141       \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i].\textcolor{keyword}{operator}>(estado))\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00142}00142          \textcolor{comment}{// debe insertarse justo en la posicion i}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00143}00143          indiceInsercion = i;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00145}00145          \textcolor{comment}{// rompe el bucle}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00146}00146          continuar = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00147}00147       \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00148}00148    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00150}00150    \textcolor{comment}{// se reserva nuevo espacio para los estados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00151}00151    \mbox{\hyperlink{class_estado}{Estado}} * espacio = \mbox{\hyperlink{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}{reservar}}(\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} + 1);}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00153}00153    \textcolor{comment}{// se copian los estados hasta posicion indiceInsercion-\/1}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00154}00154    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < indiceInsercion; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00155}00155       espacio[i] = \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00156}00156    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00158}00158    \textcolor{comment}{// se inserta el estado pasado como argumento en la posicion}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00159}00159    \textcolor{comment}{// dada por indiceInsercion}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00160}00160    espacio[indiceInsercion] = estado;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00162}00162    \textcolor{comment}{// se copian los estados desde indiceInsercion (en la cola original)}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00163}00163    \textcolor{comment}{// hasta el final}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00164}00164    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=indiceInsercion; i < \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00165}00165       espacio[i+1] = \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00166}00166    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00168}00168    \textcolor{comment}{// se libera el espacio previo}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00169}00169    \mbox{\hyperlink{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00171}00171    \textcolor{comment}{// se hace que cola apunte a espacio}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00172}00172    \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}} = espacio;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00174}00174    \textcolor{comment}{// se incrementa el contador de estados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00175}00175    \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}++;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00176}00176 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00185}\mbox{\hyperlink{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}{00185}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}{ColaPrioridad::actualizar}}(\mbox{\hyperlink{class_estado}{Estado}} \& estado1, \mbox{\hyperlink{class_estado}{Estado}} \& estado2)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00186}00186    \textcolor{comment}{// se trata de dos estados que equivalen a la misma situacion del}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00187}00187    \textcolor{comment}{// diagrama y hay que seguir con el estado que tenga menor coste}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00188}00188    \textcolor{keywordflow}{if}(estado1 < estado2)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00189}00189       \textcolor{comment}{// es mas prometedor el estado 1; se deja la situacion como}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00190}00190       \textcolor{comment}{// esta y ho hace falta insertar estado2}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00191}00191       estado2.\mbox{\hyperlink{class_estado_a35e676011fa1c6b53fda311b79bf8ffc}{podar}}();}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00193}00193       \textcolor{comment}{// se incrementa el contador de podas}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00194}00194       \mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}}++;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00195}00195    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00196}00196    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00197}00197       \textcolor{comment}{// se hace que estado1 tome todos los valores de estado2}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00198}00198       estado1 = estado2;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00200}00200       \textcolor{comment}{// se hace que estado2 quede como podado}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00201}00201       estado2.\mbox{\hyperlink{class_estado_a35e676011fa1c6b53fda311b79bf8ffc}{podar}}();}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00203}00203       \textcolor{comment}{// se incrementa contador de actualizaciones}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00204}00204       \mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}}++;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00205}00205    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00206}00206 \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00214}\mbox{\hyperlink{class_cola_prioridad_a93ab8298396cac4b1feeaa0eb6e94760}{00214}} std::ostream \& \mbox{\hyperlink{cola_prioridad_8cpp_a93ab8298396cac4b1feeaa0eb6e94760}{operator<<}}(std::ostream \& flujo, \textcolor{keyword}{const} \mbox{\hyperlink{class_cola_prioridad}{ColaPrioridad}} \& cola)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00215}00215    \textcolor{comment}{// se indica el numero de estados almacenados}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00216}00216    flujo << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ cola con prioridad -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00217}00217    flujo << \textcolor{stringliteral}{"{}numero de estados: "{}} << cola.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}} << endl;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00218}00218 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00219}00219    \textcolor{comment}{// se muestra informacion sobre el contador de actualizaciones}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00220}00220 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00221}00221    \textcolor{comment}{// se muestra informacion de cada uno de ellos}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00222}00222    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < cola.\mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numeroEstados}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00223}00223       flujo << cola.\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}[i];}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00224}00224    \}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00225}00225    flujo << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00227}00227    \textcolor{comment}{// se devuelve el flujo}}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00228}00228    \textcolor{keywordflow}{return} flujo;}
+\DoxyCodeLine{\Hypertarget{cola_prioridad_8cpp_source_l00229}00229 \}}
+
+\end{DoxyCode}

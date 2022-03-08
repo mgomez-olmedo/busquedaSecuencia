@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/testMatriz.dir/testMatriz.cpp.o CMakeFiles/testMatriz.dir/__/src/matriz.cpp.o CMakeFiles/testMatriz.dir/__/src/secuenciaEnteros.cpp.o -o testMatriz 

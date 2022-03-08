@@ -1,0 +1,156 @@
+\hypertarget{class_a_star_search}{}\doxysection{AStar\+Search Class Reference}
+\label{class_a_star_search}\index{AStarSearch@{AStarSearch}}
+
+
+{\ttfamily \#include $<$a\+Star\+Search.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_star_search_a9c63e25b93aebb43ac73c16eb25a2577}{AStar\+Search}} (const \mbox{\hyperlink{class_diagrama}{Diagrama}} \&diagrama)
+\item 
+\mbox{\hyperlink{class_a_star_search_a9e6caa46686af7a51505123032a95a6d}{$\sim$\+AStar\+Search}} ()
+\item 
+void \mbox{\hyperlink{class_a_star_search_a605168f5bdbb34bd2b8190d328692d5b}{incluir\+Abierto}} (\mbox{\hyperlink{class_estado}{Estado}} \&estado)
+\item 
+void \mbox{\hyperlink{class_a_star_search_afab8cc05cab59f2388e5766f62bb42ed}{buscar}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_a_star_search_a797f02b415d91cfb582b726cb786d07f}{raiz}}
+\item 
+\mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \mbox{\hyperlink{class_a_star_search_a1756b2951611493d099e4dca374ed546}{abiertos}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_estado}{Estado}} $>$ \mbox{\hyperlink{class_a_star_search_a0a3627ae856d0e4884bd3f8d26dc9a98}{cerrado}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_a_star_search_a52fb6ab15c8a7e6db6c17b8f4aa1f160}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_a_star_search}{AStar\+Search}} \&objeto)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a_star_search_8h_source_l00012}{12}} of file \mbox{\hyperlink{a_star_search_8h_source}{a\+Star\+Search.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_star_search_a9c63e25b93aebb43ac73c16eb25a2577}\label{class_a_star_search_a9c63e25b93aebb43ac73c16eb25a2577}} 
+\index{AStarSearch@{AStarSearch}!AStarSearch@{AStarSearch}}
+\index{AStarSearch@{AStarSearch}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{AStarSearch()}{AStarSearch()}}
+{\footnotesize\ttfamily AStar\+Search\+::\+AStar\+Search (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_diagrama}{Diagrama}} \&}]{diagrama }\end{DoxyParamCaption})}
+
+constructor de la clase 
+\begin{DoxyParams}{Parameters}
+{\em diagrama} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{a_star_search_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{a_star_search_8cpp_source}{a\+Star\+Search.\+cpp}}.
+
+\mbox{\Hypertarget{class_a_star_search_a9e6caa46686af7a51505123032a95a6d}\label{class_a_star_search_a9e6caa46686af7a51505123032a95a6d}} 
+\index{AStarSearch@{AStarSearch}!````~AStarSearch@{$\sim$AStarSearch}}
+\index{````~AStarSearch@{$\sim$AStarSearch}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{$\sim$AStarSearch()}{~AStarSearch()}}
+{\footnotesize\ttfamily AStar\+Search\+::$\sim$\+AStar\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor de la clase 
+
+Definition at line \mbox{\hyperlink{a_star_search_8h_source_l00038}{38}} of file \mbox{\hyperlink{a_star_search_8h_source}{a\+Star\+Search.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_star_search_afab8cc05cab59f2388e5766f62bb42ed}\label{class_a_star_search_afab8cc05cab59f2388e5766f62bb42ed}} 
+\index{AStarSearch@{AStarSearch}!buscar@{buscar}}
+\index{buscar@{buscar}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily void AStar\+Search\+::buscar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+metodo general de busqueda 
+
+Definition at line \mbox{\hyperlink{a_star_search_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{a_star_search_8cpp_source}{a\+Star\+Search.\+cpp}}.
+
+\mbox{\Hypertarget{class_a_star_search_a605168f5bdbb34bd2b8190d328692d5b}\label{class_a_star_search_a605168f5bdbb34bd2b8190d328692d5b}} 
+\index{AStarSearch@{AStarSearch}!incluirAbierto@{incluirAbierto}}
+\index{incluirAbierto@{incluirAbierto}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{incluirAbierto()}{incluirAbierto()}}
+{\footnotesize\ttfamily void AStar\+Search\+::incluir\+Abierto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption})}
+
+metodo para incluir un estado en la lista de abiertos 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{a_star_search_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{a_star_search_8cpp_source}{a\+Star\+Search.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_a_star_search_a52fb6ab15c8a7e6db6c17b8f4aa1f160}\label{class_a_star_search_a52fb6ab15c8a7e6db6c17b8f4aa1f160}} 
+\index{AStarSearch@{AStarSearch}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_a_star_search}{AStar\+Search}} \&}]{objeto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+operador de salida 
+\begin{DoxyParams}{Parameters}
+{\em flujo} & \\
+\hline
+{\em objeto} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{a_star_search_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{a_star_search_8cpp_source}{a\+Star\+Search.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_star_search_a1756b2951611493d099e4dca374ed546}\label{class_a_star_search_a1756b2951611493d099e4dca374ed546}} 
+\index{AStarSearch@{AStarSearch}!abiertos@{abiertos}}
+\index{abiertos@{abiertos}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{abiertos}{abiertos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} AStar\+Search\+::abiertos\hspace{0.3cm}{\ttfamily [private]}}
+
+cola de prioridad de los estados por examinar 
+
+Definition at line \mbox{\hyperlink{a_star_search_8h_source_l00022}{22}} of file \mbox{\hyperlink{a_star_search_8h_source}{a\+Star\+Search.\+h}}.
+
+\mbox{\Hypertarget{class_a_star_search_a0a3627ae856d0e4884bd3f8d26dc9a98}\label{class_a_star_search_a0a3627ae856d0e4884bd3f8d26dc9a98}} 
+\index{AStarSearch@{AStarSearch}!cerrado@{cerrado}}
+\index{cerrado@{cerrado}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{cerrado}{cerrado}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_estado}{Estado}}$>$ AStar\+Search\+::cerrado\hspace{0.3cm}{\ttfamily [private]}}
+
+vector con los estados ya explorados 
+
+Definition at line \mbox{\hyperlink{a_star_search_8h_source_l00027}{27}} of file \mbox{\hyperlink{a_star_search_8h_source}{a\+Star\+Search.\+h}}.
+
+\mbox{\Hypertarget{class_a_star_search_a797f02b415d91cfb582b726cb786d07f}\label{class_a_star_search_a797f02b415d91cfb582b726cb786d07f}} 
+\index{AStarSearch@{AStarSearch}!raiz@{raiz}}
+\index{raiz@{raiz}!AStarSearch@{AStarSearch}}
+\doxysubsubsection{\texorpdfstring{raiz}{raiz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}}$\ast$ AStar\+Search\+::raiz\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{class_estado}{Estado}} inicial para desencadenar la busqueda 
+
+Definition at line \mbox{\hyperlink{a_star_search_8h_source_l00017}{17}} of file \mbox{\hyperlink{a_star_search_8h_source}{a\+Star\+Search.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{a_star_search_8h}{a\+Star\+Search.\+h}}\item 
+src/\mbox{\hyperlink{a_star_search_8cpp}{a\+Star\+Search.\+cpp}}\end{DoxyCompactItemize}

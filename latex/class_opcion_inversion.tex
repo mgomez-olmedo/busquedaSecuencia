@@ -1,0 +1,257 @@
+\hypertarget{class_opcion_inversion}{}\doxysection{Opcion\+Inversion Class Reference}
+\label{class_opcion_inversion}\index{OpcionInversion@{OpcionInversion}}
+
+
+{\ttfamily \#include $<$opcion\+Inversion.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_opcion_inversion_a4984dcb8db7e21ea770b8151a07fa391}{Opcion\+Inversion}} ()
+\item 
+\mbox{\hyperlink{class_opcion_inversion_ae2a411e4dc6f0f7b2a4c8fdcdfda2a3c}{Opcion\+Inversion}} (int \mbox{\hyperlink{class_opcion_inversion_a50953bd8b48e2bf1f389fa99f0cdc15d}{id\+Objetivo}})
+\item 
+int \mbox{\hyperlink{class_opcion_inversion_a4d0ed57375ae59d98a3487b03c54bdce}{obtener\+Id\+Objetivo}} () const
+\item 
+double \mbox{\hyperlink{class_opcion_inversion_a905290fcf6131580b2010d618cc5a7f8}{obtener\+Coste}} () const
+\item 
+\mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \& \mbox{\hyperlink{class_opcion_inversion_a5cfbfc5866c3c429dce531a60bbbff97}{operator+=}} (int id)
+\item 
+\mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \& \mbox{\hyperlink{class_opcion_inversion_a6c75daa8292071c4b2f1da7147e7588f}{operator-\/=}} (int id)
+\item 
+int \& \mbox{\hyperlink{class_opcion_inversion_aacf10d2ca0559bb9ba48f90e9106d89d}{operator\mbox{[}$\,$\mbox{]}}} (int indice)
+\item 
+const int \& \mbox{\hyperlink{class_opcion_inversion_ada812fbcef76793db7a97bf2284ed9e0}{operator\mbox{[}$\,$\mbox{]}}} (int indice) const
+\item 
+int \mbox{\hyperlink{class_opcion_inversion_a4be09fd8bdb2737cc2e6f59ad479ece3}{obtener\+Tamanno}} () const
+\item 
+void \mbox{\hyperlink{class_opcion_inversion_ad2df1e96cf530b5dd6f88b33e474e482}{asignar\+Coste}} (double \mbox{\hyperlink{class_opcion_inversion_aead21a3b7fc2226f597ce05806ab6f8d}{coste}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_opcion_inversion_a50953bd8b48e2bf1f389fa99f0cdc15d}{id\+Objetivo}}
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \mbox{\hyperlink{class_opcion_inversion_a532c9ecfafaa337f026c03779b78ba5c}{inversiones}}
+\item 
+double \mbox{\hyperlink{class_opcion_inversion_aead21a3b7fc2226f597ce05806ab6f8d}{coste}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_opcion_inversion_ae9ab883952cac98d4772504442a3e1c5}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \&opcion)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00008}{8}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_opcion_inversion_a4984dcb8db7e21ea770b8151a07fa391}\label{class_opcion_inversion_a4984dcb8db7e21ea770b8151a07fa391}} 
+\index{OpcionInversion@{OpcionInversion}!OpcionInversion@{OpcionInversion}}
+\index{OpcionInversion@{OpcionInversion}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{OpcionInversion()}{OpcionInversion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Opcion\+Inversion\+::\+Opcion\+Inversion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor por defecto 
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00030}{30}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_ae2a411e4dc6f0f7b2a4c8fdcdfda2a3c}\label{class_opcion_inversion_ae2a411e4dc6f0f7b2a4c8fdcdfda2a3c}} 
+\index{OpcionInversion@{OpcionInversion}!OpcionInversion@{OpcionInversion}}
+\index{OpcionInversion@{OpcionInversion}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{OpcionInversion()}{OpcionInversion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Opcion\+Inversion\+::\+Opcion\+Inversion (\begin{DoxyParamCaption}\item[{int}]{id\+Objetivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor con id\+Objetivo como argumento 
+\begin{DoxyParams}{Parameters}
+{\em id\+Objetivo} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00037}{37}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_opcion_inversion_ad2df1e96cf530b5dd6f88b33e474e482}\label{class_opcion_inversion_ad2df1e96cf530b5dd6f88b33e474e482}} 
+\index{OpcionInversion@{OpcionInversion}!asignarCoste@{asignarCoste}}
+\index{asignarCoste@{asignarCoste}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{asignarCoste()}{asignarCoste()}}
+{\footnotesize\ttfamily void Opcion\+Inversion\+::asignar\+Coste (\begin{DoxyParamCaption}\item[{double}]{coste }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+asigna el coste a la opcion de inversion 
+\begin{DoxyParams}{Parameters}
+{\em coste} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00108}{108}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a905290fcf6131580b2010d618cc5a7f8}\label{class_opcion_inversion_a905290fcf6131580b2010d618cc5a7f8}} 
+\index{OpcionInversion@{OpcionInversion}!obtenerCoste@{obtenerCoste}}
+\index{obtenerCoste@{obtenerCoste}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{obtenerCoste()}{obtenerCoste()}}
+{\footnotesize\ttfamily double Opcion\+Inversion\+::obtener\+Coste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+metodo de acceso al coste asociado a la opcion de inversion \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00053}{53}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a4d0ed57375ae59d98a3487b03c54bdce}\label{class_opcion_inversion_a4d0ed57375ae59d98a3487b03c54bdce}} 
+\index{OpcionInversion@{OpcionInversion}!obtenerIdObjetivo@{obtenerIdObjetivo}}
+\index{obtenerIdObjetivo@{obtenerIdObjetivo}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{obtenerIdObjetivo()}{obtenerIdObjetivo()}}
+{\footnotesize\ttfamily int Opcion\+Inversion\+::obtener\+Id\+Objetivo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+obtiene acceso al dato miembro id\+Objetivo \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00045}{45}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a4be09fd8bdb2737cc2e6f59ad479ece3}\label{class_opcion_inversion_a4be09fd8bdb2737cc2e6f59ad479ece3}} 
+\index{OpcionInversion@{OpcionInversion}!obtenerTamanno@{obtenerTamanno}}
+\index{obtenerTamanno@{obtenerTamanno}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{obtenerTamanno()}{obtenerTamanno()}}
+{\footnotesize\ttfamily int Opcion\+Inversion\+::obtener\+Tamanno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+devuelve el numero de inversiones a realizar \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00100}{100}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a5cfbfc5866c3c429dce531a60bbbff97}\label{class_opcion_inversion_a5cfbfc5866c3c429dce531a60bbbff97}} 
+\index{OpcionInversion@{OpcionInversion}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \& Opcion\+Inversion\+::operator+= (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+se agrega nueva inversion al objeto 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00061}{61}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a6c75daa8292071c4b2f1da7147e7588f}\label{class_opcion_inversion_a6c75daa8292071c4b2f1da7147e7588f}} 
+\index{OpcionInversion@{OpcionInversion}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \& Opcion\+Inversion\+::operator-\/= (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+se elimina una de las opciones de inversion 
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00071}{71}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_aacf10d2ca0559bb9ba48f90e9106d89d}\label{class_opcion_inversion_aacf10d2ca0559bb9ba48f90e9106d89d}} 
+\index{OpcionInversion@{OpcionInversion}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int \& Opcion\+Inversion\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+operador \mbox{[}\mbox{]} para colecciones normales 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00083}{83}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_ada812fbcef76793db7a97bf2284ed9e0}\label{class_opcion_inversion_ada812fbcef76793db7a97bf2284ed9e0}} 
+\index{OpcionInversion@{OpcionInversion}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int \& Opcion\+Inversion\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+operador \mbox{[}\mbox{]} para colecciones constantes 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00092}{92}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_opcion_inversion_ae9ab883952cac98d4772504442a3e1c5}\label{class_opcion_inversion_ae9ab883952cac98d4772504442a3e1c5}} 
+\index{OpcionInversion@{OpcionInversion}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_opcion_inversion}{Opcion\+Inversion}} \&}]{opcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+operador de salida 
+\begin{DoxyParams}{Parameters}
+{\em flujo} & \\
+\hline
+{\em opcion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00118}{118}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_opcion_inversion_aead21a3b7fc2226f597ce05806ab6f8d}\label{class_opcion_inversion_aead21a3b7fc2226f597ce05806ab6f8d}} 
+\index{OpcionInversion@{OpcionInversion}!coste@{coste}}
+\index{coste@{coste}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{coste}{coste}}
+{\footnotesize\ttfamily double Opcion\+Inversion\+::coste\hspace{0.3cm}{\ttfamily [private]}}
+
+coste asociado a la secuencia 
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00024}{24}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a50953bd8b48e2bf1f389fa99f0cdc15d}\label{class_opcion_inversion_a50953bd8b48e2bf1f389fa99f0cdc15d}} 
+\index{OpcionInversion@{OpcionInversion}!idObjetivo@{idObjetivo}}
+\index{idObjetivo@{idObjetivo}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{idObjetivo}{idObjetivo}}
+{\footnotesize\ttfamily int Opcion\+Inversion\+::id\+Objetivo\hspace{0.3cm}{\ttfamily [private]}}
+
+id del nodo de azar a ser borrado 
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00013}{13}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+\mbox{\Hypertarget{class_opcion_inversion_a532c9ecfafaa337f026c03779b78ba5c}\label{class_opcion_inversion_a532c9ecfafaa337f026c03779b78ba5c}} 
+\index{OpcionInversion@{OpcionInversion}!inversiones@{inversiones}}
+\index{inversiones@{inversiones}!OpcionInversion@{OpcionInversion}}
+\doxysubsubsection{\texorpdfstring{inversiones}{inversiones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} Opcion\+Inversion\+::inversiones\hspace{0.3cm}{\ttfamily [private]}}
+
+operaciones de ids de nodos de azar con los que habria que hacer inversion 
+
+Definition at line \mbox{\hyperlink{opcion_inversion_8h_source_l00019}{19}} of file \mbox{\hyperlink{opcion_inversion_8h_source}{opcion\+Inversion.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{opcion_inversion_8h}{opcion\+Inversion.\+h}}\end{DoxyCompactItemize}

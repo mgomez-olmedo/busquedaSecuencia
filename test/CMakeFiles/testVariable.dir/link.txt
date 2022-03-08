@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/testVariable.dir/testVariable.cpp.o CMakeFiles/testVariable.dir/__/src/variable.cpp.o -o testVariable 

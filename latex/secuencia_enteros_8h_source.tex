@@ -1,0 +1,76 @@
+\hypertarget{secuencia_enteros_8h_source}{}\doxysection{secuencia\+Enteros.\+h}
+\label{secuencia_enteros_8h_source}\index{include/secuenciaEnteros.h@{include/secuenciaEnteros.h}}
+\mbox{\hyperlink{secuencia_enteros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef SECUENCIAENTEROS\_H}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00002}00002 \textcolor{preprocessor}{\#define SECUENCIAENTEROS\_H}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00004}00004 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00005}00005 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00007}\mbox{\hyperlink{class_secuencia_enteros}{00007}} \textcolor{keyword}{class }\mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}}\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00008}00008 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00012}\mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{00012}}     \textcolor{keywordtype}{int} *\mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00017}\mbox{\hyperlink{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}{00017}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}{reservados}};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00022}\mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{00022}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{usados}};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00029}\mbox{\hyperlink{class_secuencia_enteros_ad5ae16d8a4495aced340045e06dd0b7f}{00029}}     \textcolor{keywordtype}{int} * \mbox{\hyperlink{class_secuencia_enteros_ad5ae16d8a4495aced340045e06dd0b7f}{reservar}}(\textcolor{keywordtype}{int} dimension)\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00030}00030        \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keywordtype}{int}[dimension];}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00036}\mbox{\hyperlink{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}{00036}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}{liberar}}()\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00037}00037        \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}} != 0)\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00038}00038           \textcolor{keyword}{delete} [] \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00039}00039           \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00040}00040        \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00042}00042 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00047}\mbox{\hyperlink{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}{00047}}     \mbox{\hyperlink{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}{SecuenciaEnteros}}()\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00048}00048        \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00049}00049        \mbox{\hyperlink{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}{reservados}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00050}00050        \mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{usados}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00051}00051     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00056}\mbox{\hyperlink{class_secuencia_enteros_a3108cc2ea09e8de8e7723c9cbe416c61}{00056}}     \mbox{\hyperlink{class_secuencia_enteros_a3108cc2ea09e8de8e7723c9cbe416c61}{\string~SecuenciaEnteros}}()\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00057}00057        \mbox{\hyperlink{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00058}00058        \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00059}00059        \mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{usados}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00060}00060        \mbox{\hyperlink{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}{reservados}} = 0;}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00061}00061     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00067}00067     \mbox{\hyperlink{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}{SecuenciaEnteros}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& origen);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00074}00074     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_secuencia_enteros_a47b9c49003f30b0e38fa6c077d4d15a9}{contiene}}(\textcolor{keywordtype}{int} valor) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00081}00081     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_a1c64a622cfcb131a03fe6810486f8514}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& origen);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00087}\mbox{\hyperlink{class_secuencia_enteros_ab5f07dd83f77c025ba6a60c1f2a7e240}{00087}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_secuencia_enteros_ab5f07dd83f77c025ba6a60c1f2a7e240}{obtenerTamanno}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00088}00088        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{usados}};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00096}\mbox{\hyperlink{class_secuencia_enteros_a5f4b1f13087f4f56091237367a223020}{00096}}     \textcolor{keywordtype}{int} \& \mbox{\hyperlink{class_secuencia_enteros_a5f4b1f13087f4f56091237367a223020}{operator[]}}(\textcolor{keywordtype}{int} indice) \{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00097}00097        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}}[indice];}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00098}00098     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00105}\mbox{\hyperlink{class_secuencia_enteros_a1ab9c007accd2ce49708e61dc4f4fcef}{00105}}     \textcolor{keyword}{const} \textcolor{keywordtype}{int} \& \mbox{\hyperlink{class_secuencia_enteros_a1ab9c007accd2ce49708e61dc4f4fcef}{operator[]}}(\textcolor{keywordtype}{int} indice)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00106}00106        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}}[indice];}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00114}00114     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab20a55b74ea0d22b0258883dfdeb25de}{operator+=}}(\textcolor{keywordtype}{int} nuevo);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00121}00121     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab20a55b74ea0d22b0258883dfdeb25de}{operator+=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& otra);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00127}00127     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab68dd4a43bf8291078312a6c337e2616}{operator-\/=}}(\textcolor{keywordtype}{int} objetivo);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00135}00135     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab68dd4a43bf8291078312a6c337e2616}{operator-\/=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& otra);}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00140}00140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_secuencia_enteros_a0d593a656b6fbaa2c1dc1f563a0d7fa5}{invertir}}();}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00148}\mbox{\hyperlink{class_secuencia_enteros_a39de416360a87ddc7bb2f52ac2651ff7}{00148}}     \textcolor{keyword}{friend} std::ostream \& \mbox{\hyperlink{class_secuencia_enteros_a39de416360a87ddc7bb2f52ac2651ff7}{operator<<}}(std::ostream \& flujo, \textcolor{keyword}{const} \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \& \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}});}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00149}00149 \};}
+\DoxyCodeLine{\Hypertarget{secuencia_enteros_8h_source_l00150}00150 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//SECUENCIAENTEROS\_H}}
+
+\end{DoxyCode}

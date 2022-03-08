@@ -1,0 +1,99 @@
+\hypertarget{utilidades_8h}{}\doxysection{include/utilidades.h File Reference}
+\label{utilidades_8h}\index{include/utilidades.h@{include/utilidades.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}secuencia\+Enteros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opcion\+Inversion.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utilidades_8h_a1e61424eb196024ef5ba8820255746cb}{presentar\+Errores}} (std\+::string modulo, std\+::string funcion, bool salir)
+\item 
+void \mbox{\hyperlink{utilidades_8h_a83af486fa2b89c8b41783c7a752805b8}{filtrar\+Repetidos}} (std\+::vector$<$ \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} $>$ \&orden)
+\item 
+int \mbox{\hyperlink{utilidades_8h_ab06a5be93b9e5dca54f29fe2d4c2c1c6}{buscar\+Minimo}} (double $\ast$valores, int longitud)
+\item 
+double \mbox{\hyperlink{utilidades_8h_ae2dc425086d9245495559e63dce9dc13}{obtener\+Maximo}} (double valor1, double valor2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utilidades_8h_ab06a5be93b9e5dca54f29fe2d4c2c1c6}\label{utilidades_8h_ab06a5be93b9e5dca54f29fe2d4c2c1c6}} 
+\index{utilidades.h@{utilidades.h}!buscarMinimo@{buscarMinimo}}
+\index{buscarMinimo@{buscarMinimo}!utilidades.h@{utilidades.h}}
+\doxysubsubsection{\texorpdfstring{buscarMinimo()}{buscarMinimo()}}
+{\footnotesize\ttfamily int buscar\+Minimo (\begin{DoxyParamCaption}\item[{double $\ast$}]{valores,  }\item[{int}]{longitud }\end{DoxyParamCaption})}
+
+funcion para determinar el minimo de una operaciones de valores 
+\begin{DoxyParams}{Parameters}
+{\em valores} & \\
+\hline
+{\em longitud} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{utilidades_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{utilidades_8cpp_source}{utilidades.\+cpp}}.
+
+\mbox{\Hypertarget{utilidades_8h_a83af486fa2b89c8b41783c7a752805b8}\label{utilidades_8h_a83af486fa2b89c8b41783c7a752805b8}} 
+\index{utilidades.h@{utilidades.h}!filtrarRepetidos@{filtrarRepetidos}}
+\index{filtrarRepetidos@{filtrarRepetidos}!utilidades.h@{utilidades.h}}
+\doxysubsubsection{\texorpdfstring{filtrarRepetidos()}{filtrarRepetidos()}}
+{\footnotesize\ttfamily void filtrar\+Repetidos (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} $>$ \&}]{orden }\end{DoxyParamCaption})}
+
+funcion para eliminar repetidos en los vectores indicando las relaciones entre los nodos 
+\begin{DoxyParams}{Parameters}
+{\em orden} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utilidades_8h_ae2dc425086d9245495559e63dce9dc13}\label{utilidades_8h_ae2dc425086d9245495559e63dce9dc13}} 
+\index{utilidades.h@{utilidades.h}!obtenerMaximo@{obtenerMaximo}}
+\index{obtenerMaximo@{obtenerMaximo}!utilidades.h@{utilidades.h}}
+\doxysubsubsection{\texorpdfstring{obtenerMaximo()}{obtenerMaximo()}}
+{\footnotesize\ttfamily double obtener\+Maximo (\begin{DoxyParamCaption}\item[{double}]{valor1,  }\item[{double}]{valor2 }\end{DoxyParamCaption})}
+
+metodo para para obtener el maximo valor de los pasados como argumento 
+\begin{DoxyParams}{Parameters}
+{\em valor1} & \\
+\hline
+{\em valor2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{utilidades_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{utilidades_8cpp_source}{utilidades.\+cpp}}.
+
+\mbox{\Hypertarget{utilidades_8h_a1e61424eb196024ef5ba8820255746cb}\label{utilidades_8h_a1e61424eb196024ef5ba8820255746cb}} 
+\index{utilidades.h@{utilidades.h}!presentarErrores@{presentarErrores}}
+\index{presentarErrores@{presentarErrores}!utilidades.h@{utilidades.h}}
+\doxysubsubsection{\texorpdfstring{presentarErrores()}{presentarErrores()}}
+{\footnotesize\ttfamily void presentar\+Errores (\begin{DoxyParamCaption}\item[{std\+::string}]{modulo,  }\item[{std\+::string}]{funcion,  }\item[{bool}]{salir }\end{DoxyParamCaption})}
+
+Funciones de utilidad para todos los modulos en general funcion para informacion de errores 
+\begin{DoxyParams}{Parameters}
+{\em modulo} & \\
+\hline
+{\em funcion} & \\
+\hline
+{\em salir} & \\
+\hline
+\end{DoxyParams}
+funcion de presentacion de errores 
+\begin{DoxyParams}{Parameters}
+{\em modulo} & \\
+\hline
+{\em funcion} & \\
+\hline
+{\em salir} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{utilidades_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{utilidades_8cpp_source}{utilidades.\+cpp}}.
+

@@ -1,0 +1,281 @@
+\hypertarget{class_cola_prioridad}{}\doxysection{Cola\+Prioridad Class Reference}
+\label{class_cola_prioridad}\index{ColaPrioridad@{ColaPrioridad}}
+
+
+{\ttfamily \#include $<$cola\+Prioridad.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cola_prioridad_a8e7bb5e019d2f9e876011074a82c13f3}{Cola\+Prioridad}} ()
+\item 
+\mbox{\hyperlink{class_cola_prioridad_aefafb7ac500b929a0aa511deb08d8446}{Cola\+Prioridad}} (const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&origen)
+\item 
+\mbox{\hyperlink{class_cola_prioridad_a58b0f3f02b950d7cb460d35a433de46a}{$\sim$\+Cola\+Prioridad}} ()
+\item 
+\mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \& \mbox{\hyperlink{class_cola_prioridad_a3b5b3b041f06481f16122d94522d4541}{operator=}} (const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&origen)
+\item 
+\mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \& \mbox{\hyperlink{class_cola_prioridad_a09e83a452cb8abb2ba0550b377b665f8}{operator+=}} (\mbox{\hyperlink{class_estado}{Estado}} \&estado)
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} \mbox{\hyperlink{class_cola_prioridad_a0e3237e8fbd0c9fe8fa173116de7ab78}{extraer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}{reservar}} (int dimension)
+\item 
+void \mbox{\hyperlink{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}{liberar}} ()
+\item 
+int \mbox{\hyperlink{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}{buscar}} (const \mbox{\hyperlink{class_estado}{Estado}} \&referencia) const
+\item 
+void \mbox{\hyperlink{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}{insertar}} (const \mbox{\hyperlink{class_estado}{Estado}} \&estado)
+\item 
+void \mbox{\hyperlink{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}{actualizar}} (\mbox{\hyperlink{class_estado}{Estado}} \&estado1, \mbox{\hyperlink{class_estado}{Estado}} \&estado2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}}
+\item 
+int \mbox{\hyperlink{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}{numero\+Estados}}
+\item 
+int \mbox{\hyperlink{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}{actualizaciones}}
+\item 
+int \mbox{\hyperlink{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}{podas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_cola_prioridad_a93ab8298396cac4b1feeaa0eb6e94760}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&\mbox{\hyperlink{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}{cola}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+clase para almacenar los estados de busqueda en la lista abiertos 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00010}{10}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cola_prioridad_a8e7bb5e019d2f9e876011074a82c13f3}\label{class_cola_prioridad_a8e7bb5e019d2f9e876011074a82c13f3}} 
+\index{ColaPrioridad@{ColaPrioridad}!ColaPrioridad@{ColaPrioridad}}
+\index{ColaPrioridad@{ColaPrioridad}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{ColaPrioridad()}{ColaPrioridad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cola\+Prioridad\+::\+Cola\+Prioridad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor por defecto 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00077}{77}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_aefafb7ac500b929a0aa511deb08d8446}\label{class_cola_prioridad_aefafb7ac500b929a0aa511deb08d8446}} 
+\index{ColaPrioridad@{ColaPrioridad}!ColaPrioridad@{ColaPrioridad}}
+\index{ColaPrioridad@{ColaPrioridad}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{ColaPrioridad()}{ColaPrioridad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cola\+Prioridad\+::\+Cola\+Prioridad (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&}]{origen }\end{DoxyParamCaption})}
+
+constructor de copia 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a58b0f3f02b950d7cb460d35a433de46a}\label{class_cola_prioridad_a58b0f3f02b950d7cb460d35a433de46a}} 
+\index{ColaPrioridad@{ColaPrioridad}!````~ColaPrioridad@{$\sim$ColaPrioridad}}
+\index{````~ColaPrioridad@{$\sim$ColaPrioridad}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{$\sim$ColaPrioridad()}{~ColaPrioridad()}}
+{\footnotesize\ttfamily Cola\+Prioridad\+::$\sim$\+Cola\+Prioridad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor de la clase 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00093}{93}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}\label{class_cola_prioridad_a09240b35ed54ba3e2c11018ddb66c3f7}} 
+\index{ColaPrioridad@{ColaPrioridad}!actualizar@{actualizar}}
+\index{actualizar@{actualizar}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{actualizar()}{actualizar()}}
+{\footnotesize\ttfamily void Cola\+Prioridad\+::actualizar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_estado}{Estado}} \&}]{estado1,  }\item[{\mbox{\hyperlink{class_estado}{Estado}} \&}]{estado2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+metodo para actualizar (si es necesario) los datos de un estado ya alnacenado, al haber aparecido otro estado durante el proceso de busqueda, que representa al mismo diagrama 
+\begin{DoxyParams}{Parameters}
+{\em estado1} & \\
+\hline
+{\em estado2} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00185}{185}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}\label{class_cola_prioridad_aabe6ddb4be03bd4d27636d6cb6471346}} 
+\index{ColaPrioridad@{ColaPrioridad}!buscar@{buscar}}
+\index{buscar@{buscar}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily int Cola\+Prioridad\+::buscar (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{referencia }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+metodo privado para buscar un estado en la cola que represente la misma situacion que el estado pasado como argumento 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00118}{118}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a0e3237e8fbd0c9fe8fa173116de7ab78}\label{class_cola_prioridad_a0e3237e8fbd0c9fe8fa173116de7ab78}} 
+\index{ColaPrioridad@{ColaPrioridad}!extraer@{extraer}}
+\index{extraer@{extraer}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{extraer()}{extraer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}} Cola\+Prioridad\+::extraer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+extrae el primer elemento de la cola con prioridad \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00087}{87}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}\label{class_cola_prioridad_a31aa7c6bf0c32131d4b2180e488cd502}} 
+\index{ColaPrioridad@{ColaPrioridad}!insertar@{insertar}}
+\index{insertar@{insertar}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily void Cola\+Prioridad\+::insertar (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+metodo de insercion de un nuevo estado en la posicion correspondiente (de menor a mayor valor de coste) 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}\label{class_cola_prioridad_a28aa17ca4fc4db4b1448f7c299fb66cc}} 
+\index{ColaPrioridad@{ColaPrioridad}!liberar@{liberar}}
+\index{liberar@{liberar}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{liberar()}{liberar()}}
+{\footnotesize\ttfamily void Cola\+Prioridad\+::liberar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado de liberacion de espacio 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00044}{44}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a09e83a452cb8abb2ba0550b377b665f8}\label{class_cola_prioridad_a09e83a452cb8abb2ba0550b377b665f8}} 
+\index{ColaPrioridad@{ColaPrioridad}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \& Cola\+Prioridad\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption})}
+
+metodo para agregar un nuevo estado en la cola 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a3b5b3b041f06481f16122d94522d4541}\label{class_cola_prioridad_a3b5b3b041f06481f16122d94522d4541}} 
+\index{ColaPrioridad@{ColaPrioridad}!operator=@{operator=}}
+\index{operator=@{operator=}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \& Cola\+Prioridad\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&}]{origen }\end{DoxyParamCaption})}
+
+operador de asignacion 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}\label{class_cola_prioridad_ae4fb4195013458f01b0644772b43a378}} 
+\index{ColaPrioridad@{ColaPrioridad}!reservar@{reservar}}
+\index{reservar@{reservar}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{reservar()}{reservar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}} $\ast$ Cola\+Prioridad\+::reservar (\begin{DoxyParamCaption}\item[{int}]{dimension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado de reserva de espacio 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00032}{32}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_cola_prioridad_a93ab8298396cac4b1feeaa0eb6e94760}\label{class_cola_prioridad_a93ab8298396cac4b1feeaa0eb6e94760}} 
+\index{ColaPrioridad@{ColaPrioridad}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_cola_prioridad}{Cola\+Prioridad}} \&}]{cola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+operador de salida 
+\begin{DoxyParams}{Parameters}
+{\em flujo} & \\
+\hline
+{\em cola} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8cpp_source_l00214}{214}} of file \mbox{\hyperlink{cola_prioridad_8cpp_source}{cola\+Prioridad.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}\label{class_cola_prioridad_a06e6c50107c3378df956a840a5e4a796}} 
+\index{ColaPrioridad@{ColaPrioridad}!actualizaciones@{actualizaciones}}
+\index{actualizaciones@{actualizaciones}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{actualizaciones}{actualizaciones}}
+{\footnotesize\ttfamily int Cola\+Prioridad\+::actualizaciones\hspace{0.3cm}{\ttfamily [private]}}
+
+contadores para obtener informacion sobre el funcionamiento de la cola 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00026}{26}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}\label{class_cola_prioridad_aea1beb443935e9455292a877b1eb5db4}} 
+\index{ColaPrioridad@{ColaPrioridad}!cola@{cola}}
+\index{cola@{cola}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{cola}{cola}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}}$\ast$ Cola\+Prioridad\+::cola\hspace{0.3cm}{\ttfamily [private]}}
+
+vector de estados 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00015}{15}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}\label{class_cola_prioridad_a5e7a6822ee8867724872bba5388f0669}} 
+\index{ColaPrioridad@{ColaPrioridad}!numeroEstados@{numeroEstados}}
+\index{numeroEstados@{numeroEstados}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{numeroEstados}{numeroEstados}}
+{\footnotesize\ttfamily int Cola\+Prioridad\+::numero\+Estados\hspace{0.3cm}{\ttfamily [private]}}
+
+contador de estados 
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00020}{20}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+\mbox{\Hypertarget{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}\label{class_cola_prioridad_ad6fd7f82c293fdd7b444f03af092006f}} 
+\index{ColaPrioridad@{ColaPrioridad}!podas@{podas}}
+\index{podas@{podas}!ColaPrioridad@{ColaPrioridad}}
+\doxysubsubsection{\texorpdfstring{podas}{podas}}
+{\footnotesize\ttfamily int Cola\+Prioridad\+::podas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{cola_prioridad_8h_source_l00027}{27}} of file \mbox{\hyperlink{cola_prioridad_8h_source}{cola\+Prioridad.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{cola_prioridad_8h}{cola\+Prioridad.\+h}}\item 
+src/\mbox{\hyperlink{cola_prioridad_8cpp}{cola\+Prioridad.\+cpp}}\end{DoxyCompactItemize}

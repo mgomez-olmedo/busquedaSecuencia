@@ -1,0 +1,507 @@
+\hypertarget{class_estado}{}\doxysection{Estado Class Reference}
+\label{class_estado}\index{Estado@{Estado}}
+
+
+{\ttfamily \#include $<$estado.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado_aa956f333e0d0b9c54bc8c94055966ea2}{Estado}} ()
+\item 
+\mbox{\hyperlink{class_estado_a5ff846bf456dcf15069ce5ed8d8f3d89}{Estado}} (const \mbox{\hyperlink{class_diagrama}{Diagrama}} \&\mbox{\hyperlink{class_estado_a0a8a412399a886d4face6159e1a66689}{diagrama}}, \mbox{\hyperlink{class_estado}{Estado}} $\ast$\mbox{\hyperlink{class_estado_aebfe8d0ef4831d8ebf6bfdad9fd4da0d}{padre}}, const \mbox{\hyperlink{class_operacion}{Operacion}} \&\mbox{\hyperlink{class_estado_a08cb8bf0486125909c4f556695c0f83f}{operacion}})
+\item 
+\mbox{\hyperlink{class_estado_af954f1e222579469869b16d58bf4e2a1}{Estado}} (const \mbox{\hyperlink{class_estado}{Estado}} \&origen)
+\item 
+\mbox{\hyperlink{class_estado_a8bb18423eb811e665d831fcaeb0ccf70}{$\sim$\+Estado}} ()
+\item 
+\mbox{\hyperlink{class_diagrama}{Diagrama}} \mbox{\hyperlink{class_estado_a913bb16f9ea7955f7c7083ba56c0a731}{obtener\+Diagrama}} ()
+\item 
+void \mbox{\hyperlink{class_estado_a35e676011fa1c6b53fda311b79bf8ffc}{podar}} ()
+\item 
+void \mbox{\hyperlink{class_estado_a88e56eacb046ad92e7fc7d4b97ff1d47}{explorar}} ()
+\item 
+int \mbox{\hyperlink{class_estado_ac77ff22c2418ff9e7c0bc0c6d0bc3523}{obtener\+Numero\+Hijos}} ()
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} \& \mbox{\hyperlink{class_estado_adf7c2fb6a80d02dbe54f538daf64ef91}{operator\mbox{[}$\,$\mbox{]}}} (int indice)
+\item 
+const \mbox{\hyperlink{class_estado}{Estado}} \& \mbox{\hyperlink{class_estado_a873bb25a47e65c4e9cdaba6e58967cd4}{operator\mbox{[}$\,$\mbox{]}}} (int indice) const
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} \& \mbox{\hyperlink{class_estado_afa3f2619e99476a6d6e1d50fb57d342b}{operator=}} (const \mbox{\hyperlink{class_estado}{Estado}} \&origen)
+\item 
+bool \mbox{\hyperlink{class_estado_a867b96de2d6aaa2194e5910d0218d063}{operator$<$}} (const \mbox{\hyperlink{class_estado}{Estado}} \&estado) const
+\item 
+bool \mbox{\hyperlink{class_estado_aa91c256471019ef9dd0446ab1fa4b532}{operator$>$}} (const \mbox{\hyperlink{class_estado}{Estado}} \&estado) const
+\item 
+bool \mbox{\hyperlink{class_estado_aec30f3a29e9c36123b4d149efbb50968}{operator==}} (const \mbox{\hyperlink{class_estado}{Estado}} \&estado) const
+\item 
+bool \mbox{\hyperlink{class_estado_a6276d65f45c4932f5438670d6c2e4c47}{operator!=}} (const \mbox{\hyperlink{class_estado}{Estado}} \&estado) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_estado_aac714f3bc83ba1d69b6f61dea80a5c1c}{reservar}} (int dimension)
+\item 
+void \mbox{\hyperlink{class_estado_a9dd7ec7698b9689ee90e5c1a145a2ee0}{liberar}} ()
+\item 
+void \mbox{\hyperlink{class_estado_a2ba341e847ce6df4288d9239588bdcc7}{ejecutar\+Operacion}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_estado_aebfe8d0ef4831d8ebf6bfdad9fd4da0d}{padre}}
+\item 
+\mbox{\hyperlink{class_operacion}{Operacion}} \mbox{\hyperlink{class_estado_a08cb8bf0486125909c4f556695c0f83f}{operacion}}
+\item 
+\mbox{\hyperlink{class_diagrama}{Diagrama}} \mbox{\hyperlink{class_estado_a0a8a412399a886d4face6159e1a66689}{diagrama}}
+\item 
+\mbox{\hyperlink{class_estado}{Estado}} $\ast$ \mbox{\hyperlink{class_estado_a2e5623b0cbfb71a71234c7b9153614e4}{hijos}}
+\item 
+int \mbox{\hyperlink{class_estado_adba489bf8f9c2ed62d260981f96e0ade}{numero\+Hijos}}
+\item 
+double \mbox{\hyperlink{class_estado_abc2c70b28b38200841d38df70a091b4d}{coste}}
+\item 
+double \mbox{\hyperlink{class_estado_a7c9392165a29730837106e6bfc5aea0d}{f}}
+\item 
+double \mbox{\hyperlink{class_estado_a3ad338659c5c9dca2fcaf22f3f2af4b2}{h}}
+\item 
+bool \mbox{\hyperlink{class_estado_a6a2ee24a3e90a4eddbca6efa095f8949}{podado}}
+\item 
+int \mbox{\hyperlink{class_estado_af3ce4f31166b9801d4432d1703b09baf}{identificador}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_estado_a0b212f052fda4c8915bab0395c545ec1}{id}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_estado_ac31e47d17f240d885e2af074ab22cf8c}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_estado}{Estado}} \&estado)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para representar estados de un espacio de busqueda en el que se trabaja con diagramas de influencia 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00013}{13}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_estado_aa956f333e0d0b9c54bc8c94055966ea2}\label{class_estado_aa956f333e0d0b9c54bc8c94055966ea2}} 
+\index{Estado@{Estado}!Estado@{Estado}}
+\index{Estado@{Estado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{Estado()}{Estado()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Estado\+::\+Estado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor por defecto 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00106}{106}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a5ff846bf456dcf15069ce5ed8d8f3d89}\label{class_estado_a5ff846bf456dcf15069ce5ed8d8f3d89}} 
+\index{Estado@{Estado}!Estado@{Estado}}
+\index{Estado@{Estado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{Estado()}{Estado()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Estado\+::\+Estado (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_diagrama}{Diagrama}} \&}]{diagrama,  }\item[{\mbox{\hyperlink{class_estado}{Estado}} $\ast$}]{padre,  }\item[{const \mbox{\hyperlink{class_operacion}{Operacion}} \&}]{operacion }\end{DoxyParamCaption})}
+
+costructor de la clase 
+\begin{DoxyParams}{Parameters}
+{\em diagrama} & \\
+\hline
+{\em operacion} & \\
+\hline
+{\em padre} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_af954f1e222579469869b16d58bf4e2a1}\label{class_estado_af954f1e222579469869b16d58bf4e2a1}} 
+\index{Estado@{Estado}!Estado@{Estado}}
+\index{Estado@{Estado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{Estado()}{Estado()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Estado\+::\+Estado (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{origen }\end{DoxyParamCaption})}
+
+constructor de copia 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_a8bb18423eb811e665d831fcaeb0ccf70}\label{class_estado_a8bb18423eb811e665d831fcaeb0ccf70}} 
+\index{Estado@{Estado}!````~Estado@{$\sim$Estado}}
+\index{````~Estado@{$\sim$Estado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{$\sim$Estado()}{~Estado()}}
+{\footnotesize\ttfamily Estado\+::$\sim$\+Estado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor de la clase 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00134}{134}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_estado_a2ba341e847ce6df4288d9239588bdcc7}\label{class_estado_a2ba341e847ce6df4288d9239588bdcc7}} 
+\index{Estado@{Estado}!ejecutarOperacion@{ejecutarOperacion}}
+\index{ejecutarOperacion@{ejecutarOperacion}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{ejecutarOperacion()}{ejecutarOperacion()}}
+{\footnotesize\ttfamily void Estado\+::ejecutar\+Operacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+se ejecuta la operacion asociada al estado
+
+metodo privado para ejecutar la operacion asociada al estado 
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00227}{227}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_a88e56eacb046ad92e7fc7d4b97ff1d47}\label{class_estado_a88e56eacb046ad92e7fc7d4b97ff1d47}} 
+\index{Estado@{Estado}!explorar@{explorar}}
+\index{explorar@{explorar}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{explorar()}{explorar()}}
+{\footnotesize\ttfamily void Estado\+::explorar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+metodo de exploracion del estado, con el objetivo de determinar las posibles operaciones y generar los estados hijos 
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_a9dd7ec7698b9689ee90e5c1a145a2ee0}\label{class_estado_a9dd7ec7698b9689ee90e5c1a145a2ee0}} 
+\index{Estado@{Estado}!liberar@{liberar}}
+\index{liberar@{liberar}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{liberar()}{liberar()}}
+{\footnotesize\ttfamily void Estado\+::liberar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado para liberar espacio 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00091}{91}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a913bb16f9ea7955f7c7083ba56c0a731}\label{class_estado_a913bb16f9ea7955f7c7083ba56c0a731}} 
+\index{Estado@{Estado}!obtenerDiagrama@{obtenerDiagrama}}
+\index{obtenerDiagrama@{obtenerDiagrama}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{obtenerDiagrama()}{obtenerDiagrama()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_diagrama}{Diagrama}} Estado\+::obtener\+Diagrama (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+metodo de acceso al diagrama \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00142}{142}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_ac77ff22c2418ff9e7c0bc0c6d0bc3523}\label{class_estado_ac77ff22c2418ff9e7c0bc0c6d0bc3523}} 
+\index{Estado@{Estado}!obtenerNumeroHijos@{obtenerNumeroHijos}}
+\index{obtenerNumeroHijos@{obtenerNumeroHijos}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{obtenerNumeroHijos()}{obtenerNumeroHijos()}}
+{\footnotesize\ttfamily int Estado\+::obtener\+Numero\+Hijos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+se devuelve el numero de hijos \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00163}{163}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a6276d65f45c4932f5438670d6c2e4c47}\label{class_estado_a6276d65f45c4932f5438670d6c2e4c47}} 
+\index{Estado@{Estado}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Estado\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption}) const}
+
+Operador de desigualdad 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00173}{173}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_a867b96de2d6aaa2194e5910d0218d063}\label{class_estado_a867b96de2d6aaa2194e5910d0218d063}} 
+\index{Estado@{Estado}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Estado\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption}) const}
+
+comparador entre estados 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00146}{146}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_afa3f2619e99476a6d6e1d50fb57d342b}\label{class_estado_afa3f2619e99476a6d6e1d50fb57d342b}} 
+\index{Estado@{Estado}!operator=@{operator=}}
+\index{operator=@{operator=}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}} \& Estado\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{origen }\end{DoxyParamCaption})}
+
+operador de asignacion 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_aec30f3a29e9c36123b4d149efbb50968}\label{class_estado_aec30f3a29e9c36123b4d149efbb50968}} 
+\index{Estado@{Estado}!operator==@{operator==}}
+\index{operator==@{operator==}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Estado\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption}) const}
+
+operador de igualdad 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+operador de igualdad\+: se trata del mismo diagrama 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00164}{164}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_aa91c256471019ef9dd0446ab1fa4b532}\label{class_estado_aa91c256471019ef9dd0446ab1fa4b532}} 
+\index{Estado@{Estado}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Estado\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption}) const}
+
+comparador entre estados 
+\begin{DoxyParams}{Parameters}
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00155}{155}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+\mbox{\Hypertarget{class_estado_adf7c2fb6a80d02dbe54f538daf64ef91}\label{class_estado_adf7c2fb6a80d02dbe54f538daf64ef91}} 
+\index{Estado@{Estado}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}} \& Estado\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+se obtiene el hijo almacenado en una determinada posicion 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00172}{172}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a873bb25a47e65c4e9cdaba6e58967cd4}\label{class_estado_a873bb25a47e65c4e9cdaba6e58967cd4}} 
+\index{Estado@{Estado}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_estado}{Estado}} \& Estado\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+se obtiene el hijo almacenado en una determinada posicion 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00181}{181}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a35e676011fa1c6b53fda311b79bf8ffc}\label{class_estado_a35e676011fa1c6b53fda311b79bf8ffc}} 
+\index{Estado@{Estado}!podar@{podar}}
+\index{podar@{podar}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{podar()}{podar()}}
+{\footnotesize\ttfamily void Estado\+::podar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+asigna el flad de poda 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00149}{149}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_aac714f3bc83ba1d69b6f61dea80a5c1c}\label{class_estado_aac714f3bc83ba1d69b6f61dea80a5c1c}} 
+\index{Estado@{Estado}!reservar@{reservar}}
+\index{reservar@{reservar}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{reservar()}{reservar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}} $\ast$ Estado\+::reservar (\begin{DoxyParamCaption}\item[{int}]{dimension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado para reserva de espacio para los hijos metodo privado para reserva de espacio para los hijos 
+\begin{DoxyParams}{Parameters}
+{\em dimension} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00078}{78}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_estado_ac31e47d17f240d885e2af074ab22cf8c}\label{class_estado_ac31e47d17f240d885e2af074ab22cf8c}} 
+\index{Estado@{Estado}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_estado}{Estado}} \&}]{estado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+operador de salida 
+\begin{DoxyParams}{Parameters}
+{\em flujo} & \\
+\hline
+{\em estado} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{estado_8cpp_source_l00183}{183}} of file \mbox{\hyperlink{estado_8cpp_source}{estado.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_estado_abc2c70b28b38200841d38df70a091b4d}\label{class_estado_abc2c70b28b38200841d38df70a091b4d}} 
+\index{Estado@{Estado}!coste@{coste}}
+\index{coste@{coste}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{coste}{coste}}
+{\footnotesize\ttfamily double Estado\+::coste\hspace{0.3cm}{\ttfamily [private]}}
+
+coste asociado a este estado 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00049}{49}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a0a8a412399a886d4face6159e1a66689}\label{class_estado_a0a8a412399a886d4face6159e1a66689}} 
+\index{Estado@{Estado}!diagrama@{diagrama}}
+\index{diagrama@{diagrama}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{diagrama}{diagrama}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_diagrama}{Diagrama}} Estado\+::diagrama\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{class_diagrama}{Diagrama}} que caracteriza a este estado 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00034}{34}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a7c9392165a29730837106e6bfc5aea0d}\label{class_estado_a7c9392165a29730837106e6bfc5aea0d}} 
+\index{Estado@{Estado}!f@{f}}
+\index{f@{f}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily double Estado\+::f\hspace{0.3cm}{\ttfamily [private]}}
+
+coste asociado a la obtencion del estado (por las operaciones desde la raiz hasta el) 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00055}{55}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a3ad338659c5c9dca2fcaf22f3f2af4b2}\label{class_estado_a3ad338659c5c9dca2fcaf22f3f2af4b2}} 
+\index{Estado@{Estado}!h@{h}}
+\index{h@{h}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily double Estado\+::h\hspace{0.3cm}{\ttfamily [private]}}
+
+estimacion del coste necesario para finalizar el proceso de busqueda desde este estado (heuristica) 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00061}{61}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a2e5623b0cbfb71a71234c7b9153614e4}\label{class_estado_a2e5623b0cbfb71a71234c7b9153614e4}} 
+\index{Estado@{Estado}!hijos@{hijos}}
+\index{hijos@{hijos}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{hijos}{hijos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}}$\ast$ Estado\+::hijos\hspace{0.3cm}{\ttfamily [private]}}
+
+Coleccion de estados generados a partir de este 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00039}{39}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a0b212f052fda4c8915bab0395c545ec1}\label{class_estado_a0b212f052fda4c8915bab0395c545ec1}} 
+\index{Estado@{Estado}!id@{id}}
+\index{id@{id}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Estado\+::id = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+identificador unico para cada nodo 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00018}{18}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_af3ce4f31166b9801d4432d1703b09baf}\label{class_estado_af3ce4f31166b9801d4432d1703b09baf}} 
+\index{Estado@{Estado}!identificador@{identificador}}
+\index{identificador@{identificador}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily int Estado\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+identificador unico asignado a partir de id 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00071}{71}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_adba489bf8f9c2ed62d260981f96e0ade}\label{class_estado_adba489bf8f9c2ed62d260981f96e0ade}} 
+\index{Estado@{Estado}!numeroHijos@{numeroHijos}}
+\index{numeroHijos@{numeroHijos}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{numeroHijos}{numeroHijos}}
+{\footnotesize\ttfamily int Estado\+::numero\+Hijos\hspace{0.3cm}{\ttfamily [private]}}
+
+contador de hijos 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00044}{44}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a08cb8bf0486125909c4f556695c0f83f}\label{class_estado_a08cb8bf0486125909c4f556695c0f83f}} 
+\index{Estado@{Estado}!operacion@{operacion}}
+\index{operacion@{operacion}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{operacion}{operacion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_operacion}{Operacion}} Estado\+::operacion\hspace{0.3cm}{\ttfamily [private]}}
+
+operacion que genera el diagrama de este nodo a partir del diagrama del nodo padre 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00029}{29}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_aebfe8d0ef4831d8ebf6bfdad9fd4da0d}\label{class_estado_aebfe8d0ef4831d8ebf6bfdad9fd4da0d}} 
+\index{Estado@{Estado}!padre@{padre}}
+\index{padre@{padre}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{padre}{padre}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_estado}{Estado}}$\ast$ Estado\+::padre\hspace{0.3cm}{\ttfamily [private]}}
+
+Puntero al estado del que se obtiene este estado tras alguna operacion 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00023}{23}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+\mbox{\Hypertarget{class_estado_a6a2ee24a3e90a4eddbca6efa095f8949}\label{class_estado_a6a2ee24a3e90a4eddbca6efa095f8949}} 
+\index{Estado@{Estado}!podado@{podado}}
+\index{podado@{podado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{podado}{podado}}
+{\footnotesize\ttfamily bool Estado\+::podado\hspace{0.3cm}{\ttfamily [private]}}
+
+flag booleano para indicar que el nodo esta podado 
+
+Definition at line \mbox{\hyperlink{estado_8h_source_l00066}{66}} of file \mbox{\hyperlink{estado_8h_source}{estado.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{estado_8h}{estado.\+h}}\item 
+src/\mbox{\hyperlink{estado_8cpp}{estado.\+cpp}}\end{DoxyCompactItemize}

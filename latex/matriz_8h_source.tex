@@ -1,0 +1,73 @@
+\hypertarget{matriz_8h_source}{}\doxysection{matriz.\+h}
+\label{matriz_8h_source}\index{include/matriz.h@{include/matriz.h}}
+\mbox{\hyperlink{matriz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef MATRIZ\_H}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00003}00003 \textcolor{preprocessor}{\#define MATRIZ\_H}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00005}00005 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00006}00006 \textcolor{preprocessor}{\#include<cstring>}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{secuencia_enteros_8h}{secuenciaEnteros.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00010}\mbox{\hyperlink{class_matriz}{00010}} \textcolor{keyword}{class }\mbox{\hyperlink{class_matriz}{Matriz}} \{}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00011}00011 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00015}\mbox{\hyperlink{class_matriz_aeefecd048289980975a7a9e82392c3e7}{00015}}     \textcolor{keywordtype}{int} *\mbox{\hyperlink{class_matriz_aeefecd048289980975a7a9e82392c3e7}{matriz}};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00020}\mbox{\hyperlink{class_matriz_ade0194e1add1ba644c0558a74e6004a3}{00020}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_matriz_ade0194e1add1ba644c0558a74e6004a3}{dimension}};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00027}00027     \textcolor{keywordtype}{int} *\mbox{\hyperlink{class_matriz_a4e3a06d429c978db6112113e68b3508a}{reservar}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_matriz_ade0194e1add1ba644c0558a74e6004a3}{dimension}});}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00033}00033     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_matriz_af2396279485e52b6e46295dd49d555f5}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00041}00041     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_matriz_ada4c72ffbe78fac81664dccecb1b58e3}{calcularIndice}}(\textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} columna) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00043}00043 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00047}\mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{00047}}     \mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{Matriz}}() \{}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00048}00048        \mbox{\hyperlink{class_matriz_aeefecd048289980975a7a9e82392c3e7}{matriz}} = 0;}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00054}\mbox{\hyperlink{class_matriz_a2092b7a289ecec369e1da407d5839f5a}{00054}}     \mbox{\hyperlink{class_matriz_a2092b7a289ecec369e1da407d5839f5a}{\string~Matriz}}()\{}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00055}00055        \mbox{\hyperlink{class_matriz_af2396279485e52b6e46295dd49d555f5}{liberar}}();}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00062}00062     \mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{Matriz}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_matriz_ade0194e1add1ba644c0558a74e6004a3}{dimension}});}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00068}00068     \mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{Matriz}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \&origen);}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00075}00075     \mbox{\hyperlink{class_matriz}{Matriz}} \&\mbox{\hyperlink{class_matriz_a0f794361661f1ceb30f420ae2bce8fdd}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \&origen);}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00083}00083     \textcolor{keywordtype}{int} \& \mbox{\hyperlink{class_matriz_a0854d6a8743d7a7b963f205b01e78fc1}{operator()}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j);}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00091}00091     \textcolor{keyword}{const} \textcolor{keywordtype}{int} \& \mbox{\hyperlink{class_matriz_a0854d6a8743d7a7b963f205b01e78fc1}{operator()}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00098}00098     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_matriz_abe429a0fc380542c25f3473d794cfa9b}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \& otra) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00105}\mbox{\hyperlink{class_matriz_a24f08962fd4da05316f9ad19fde9c2e1}{00105}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_matriz_a24f08962fd4da05316f9ad19fde9c2e1}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \& otra)\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00106}00106        \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == otra);}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00114}00114     \mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_matriz_a6847e6e306b4aaa5d693d82dd86b0836}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \& otra) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00123}00123     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_matriz_a6f1cb83dc0eda30baf3f81a01d1708cd}{hijoUnico}}(\textcolor{keywordtype}{int} origen, \textcolor{keywordtype}{int} destino) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00131}00131     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \mbox{\hyperlink{class_matriz_a6f1cb83dc0eda30baf3f81a01d1708cd}{hijoUnico}}(\textcolor{keywordtype}{int} destino) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00139}00139     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \mbox{\hyperlink{class_matriz_a7ff05dc97148a6ad7c97a088b1103914}{hijos}}(\textcolor{keywordtype}{int} origen) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00147}00147     \mbox{\hyperlink{class_secuencia_enteros}{SecuenciaEnteros}} \mbox{\hyperlink{class_matriz_a87e129bc169cfc6326b5fff151d0cbb9}{padres}}(\textcolor{keywordtype}{int} destino) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00153}00153     \mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_matriz_aef018fde36c9d6383200d8d2682c1e9f}{obtenerAlcanzabilidad}}();}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00161}00161     \mbox{\hyperlink{class_matriz}{Matriz}} \& \mbox{\hyperlink{class_matriz_aab00b166aa043bc4df472741ac4a07fb}{eliminar}}(\textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} columna);}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00169}00169     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_matriz_ab887536a8a315562a3f30baecc80f2e0}{hayEnlace}}(\textcolor{keywordtype}{int} origen, \textcolor{keywordtype}{int} destino) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00177}00177     \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{class_matriz_a3ee44d104d2ae0139ad820acbb018339}{operator<<}}(std::ostream \&flujo, \textcolor{keyword}{const} \mbox{\hyperlink{class_matriz}{Matriz}} \&\mbox{\hyperlink{class_matriz_aeefecd048289980975a7a9e82392c3e7}{matriz}});}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00178}00178 \};}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00180}00180 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* MATRIZ\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{matriz_8h_source_l00181}00181 }
+
+\end{DoxyCode}

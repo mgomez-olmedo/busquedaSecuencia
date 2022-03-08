@@ -1,0 +1,362 @@
+\hypertarget{class_secuencia_enteros}{}\doxysection{Secuencia\+Enteros Class Reference}
+\label{class_secuencia_enteros}\index{SecuenciaEnteros@{SecuenciaEnteros}}
+
+
+{\ttfamily \#include $<$secuencia\+Enteros.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}{Secuencia\+Enteros}} ()
+\item 
+\mbox{\hyperlink{class_secuencia_enteros_a3108cc2ea09e8de8e7723c9cbe416c61}{$\sim$\+Secuencia\+Enteros}} ()
+\item 
+\mbox{\hyperlink{class_secuencia_enteros_af3083f8e00268975066478be39b4e210}{Secuencia\+Enteros}} (const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&origen)
+\item 
+bool \mbox{\hyperlink{class_secuencia_enteros_a47b9c49003f30b0e38fa6c077d4d15a9}{contiene}} (int valor) const
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& \mbox{\hyperlink{class_secuencia_enteros_a1c64a622cfcb131a03fe6810486f8514}{operator=}} (const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&origen)
+\item 
+int \mbox{\hyperlink{class_secuencia_enteros_ab5f07dd83f77c025ba6a60c1f2a7e240}{obtener\+Tamanno}} () const
+\item 
+int \& \mbox{\hyperlink{class_secuencia_enteros_a5f4b1f13087f4f56091237367a223020}{operator\mbox{[}$\,$\mbox{]}}} (int indice)
+\item 
+const int \& \mbox{\hyperlink{class_secuencia_enteros_a1ab9c007accd2ce49708e61dc4f4fcef}{operator\mbox{[}$\,$\mbox{]}}} (int indice) const
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab20a55b74ea0d22b0258883dfdeb25de}{operator+=}} (int nuevo)
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& \mbox{\hyperlink{class_secuencia_enteros_a6509cb3fc2d60caf262bba97d0cb6820}{operator+=}} (const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&otra)
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& \mbox{\hyperlink{class_secuencia_enteros_ab68dd4a43bf8291078312a6c337e2616}{operator-\/=}} (int objetivo)
+\item 
+\mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& \mbox{\hyperlink{class_secuencia_enteros_a1d87da0ae7933207f4100dd950cfd3be}{operator-\/=}} (const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&otra)
+\item 
+void \mbox{\hyperlink{class_secuencia_enteros_a0d593a656b6fbaa2c1dc1f563a0d7fa5}{invertir}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{class_secuencia_enteros_ad5ae16d8a4495aced340045e06dd0b7f}{reservar}} (int dimension)
+\item 
+void \mbox{\hyperlink{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}{liberar}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}}
+\item 
+int \mbox{\hyperlink{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}{reservados}}
+\item 
+int \mbox{\hyperlink{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}{usados}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_secuencia_enteros_a39de416360a87ddc7bb2f52ac2651ff7}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&\mbox{\hyperlink{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}{secuencia}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00007}{7}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}\label{class_secuencia_enteros_ae3027e9cd9359b0be97eb39421e06313}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!SecuenciaEnteros@{SecuenciaEnteros}}
+\index{SecuenciaEnteros@{SecuenciaEnteros}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{SecuenciaEnteros()}{SecuenciaEnteros()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Secuencia\+Enteros\+::\+Secuencia\+Enteros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor por defecto 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00047}{47}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a3108cc2ea09e8de8e7723c9cbe416c61}\label{class_secuencia_enteros_a3108cc2ea09e8de8e7723c9cbe416c61}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!````~SecuenciaEnteros@{$\sim$SecuenciaEnteros}}
+\index{````~SecuenciaEnteros@{$\sim$SecuenciaEnteros}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{$\sim$SecuenciaEnteros()}{~SecuenciaEnteros()}}
+{\footnotesize\ttfamily Secuencia\+Enteros\+::$\sim$\+Secuencia\+Enteros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor de la clase 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00056}{56}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_af3083f8e00268975066478be39b4e210}\label{class_secuencia_enteros_af3083f8e00268975066478be39b4e210}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!SecuenciaEnteros@{SecuenciaEnteros}}
+\index{SecuenciaEnteros@{SecuenciaEnteros}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{SecuenciaEnteros()}{SecuenciaEnteros()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Secuencia\+Enteros\+::\+Secuencia\+Enteros (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&}]{origen }\end{DoxyParamCaption})}
+
+constructor de copia 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_secuencia_enteros_a47b9c49003f30b0e38fa6c077d4d15a9}\label{class_secuencia_enteros_a47b9c49003f30b0e38fa6c077d4d15a9}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!contiene@{contiene}}
+\index{contiene@{contiene}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{contiene()}{contiene()}}
+{\footnotesize\ttfamily bool Secuencia\+Enteros\+::contiene (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption}) const}
+
+consulta si la operaciones contiene un determinado valor 
+\begin{DoxyParams}{Parameters}
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a0d593a656b6fbaa2c1dc1f563a0d7fa5}\label{class_secuencia_enteros_a0d593a656b6fbaa2c1dc1f563a0d7fa5}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!invertir@{invertir}}
+\index{invertir@{invertir}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{invertir()}{invertir()}}
+{\footnotesize\ttfamily void Secuencia\+Enteros\+::invertir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+invierte el contenido de la secuencia 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00246}{246}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}\label{class_secuencia_enteros_a199ed1726983324dbfc0fcaef0263d19}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!liberar@{liberar}}
+\index{liberar@{liberar}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{liberar()}{liberar()}}
+{\footnotesize\ttfamily void Secuencia\+Enteros\+::liberar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado para liberar espacio 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00036}{36}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_ab5f07dd83f77c025ba6a60c1f2a7e240}\label{class_secuencia_enteros_ab5f07dd83f77c025ba6a60c1f2a7e240}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!obtenerTamanno@{obtenerTamanno}}
+\index{obtenerTamanno@{obtenerTamanno}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{obtenerTamanno()}{obtenerTamanno()}}
+{\footnotesize\ttfamily int Secuencia\+Enteros\+::obtener\+Tamanno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+metodo de acceso al tam. de la operaciones \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00087}{87}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a6509cb3fc2d60caf262bba97d0cb6820}\label{class_secuencia_enteros_a6509cb3fc2d60caf262bba97d0cb6820}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& Secuencia\+Enteros\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&}]{otra }\end{DoxyParamCaption})}
+
+operador para agregar un nuevo elemento 
+\begin{DoxyParams}{Parameters}
+{\em nuevo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00115}{115}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_ab20a55b74ea0d22b0258883dfdeb25de}\label{class_secuencia_enteros_ab20a55b74ea0d22b0258883dfdeb25de}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& Secuencia\+Enteros\+::operator+= (\begin{DoxyParamCaption}\item[{int}]{nuevo }\end{DoxyParamCaption})}
+
+operador para agregar un nuevo elemento 
+\begin{DoxyParams}{Parameters}
+{\em nuevo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a1d87da0ae7933207f4100dd950cfd3be}\label{class_secuencia_enteros_a1d87da0ae7933207f4100dd950cfd3be}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& Secuencia\+Enteros\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&}]{otra }\end{DoxyParamCaption})}
+
+operador oara borrar todos los elementos de la operaciones pasada como argumento 
+\begin{DoxyParams}{Parameters}
+{\em otra} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+oeprador oara borrar todos los elementos de la operaciones pasada como argumento 
+\begin{DoxyParams}{Parameters}
+{\em otra} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00201}{201}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_ab68dd4a43bf8291078312a6c337e2616}\label{class_secuencia_enteros_ab68dd4a43bf8291078312a6c337e2616}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& Secuencia\+Enteros\+::operator-\/= (\begin{DoxyParamCaption}\item[{int}]{objetivo }\end{DoxyParamCaption})}
+
+operador para eliminar un elemento 
+\begin{DoxyParams}{Parameters}
+{\em objetivo} & \\
+\hline
+\end{DoxyParams}
+operador para eliminar un elemento @oaram objetivo 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a1c64a622cfcb131a03fe6810486f8514}\label{class_secuencia_enteros_a1c64a622cfcb131a03fe6810486f8514}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator=@{operator=}}
+\index{operator=@{operator=}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \& Secuencia\+Enteros\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&}]{origen }\end{DoxyParamCaption})}
+
+operador de asignacion 
+\begin{DoxyParams}{Parameters}
+{\em origen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{secuencia_enteros_8cpp_source}{secuencia\+Enteros.\+cpp}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a5f4b1f13087f4f56091237367a223020}\label{class_secuencia_enteros_a5f4b1f13087f4f56091237367a223020}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int \& Secuencia\+Enteros\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+operador corchete 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00096}{96}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a1ab9c007accd2ce49708e61dc4f4fcef}\label{class_secuencia_enteros_a1ab9c007accd2ce49708e61dc4f4fcef}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int \& Secuencia\+Enteros\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+operador corchete para colecciones constantes 
+\begin{DoxyParams}{Parameters}
+{\em indice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00105}{105}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_ad5ae16d8a4495aced340045e06dd0b7f}\label{class_secuencia_enteros_ad5ae16d8a4495aced340045e06dd0b7f}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!reservar@{reservar}}
+\index{reservar@{reservar}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{reservar()}{reservar()}}
+{\footnotesize\ttfamily int $\ast$ Secuencia\+Enteros\+::reservar (\begin{DoxyParamCaption}\item[{int}]{dimension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+metodo privado para reservar espacio 
+\begin{DoxyParams}{Parameters}
+{\em dimension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00029}{29}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_secuencia_enteros_a39de416360a87ddc7bb2f52ac2651ff7}\label{class_secuencia_enteros_a39de416360a87ddc7bb2f52ac2651ff7}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_secuencia_enteros}{Secuencia\+Enteros}} \&}]{secuencia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+operador de entrada 
+\begin{DoxyParams}{Parameters}
+{\em flujo} & \\
+\hline
+{\em secuencia} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}\label{class_secuencia_enteros_a3d51f541b5779f21b8153ce3dd4fca74}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!reservados@{reservados}}
+\index{reservados@{reservados}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{reservados}{reservados}}
+{\footnotesize\ttfamily int Secuencia\+Enteros\+::reservados\hspace{0.3cm}{\ttfamily [private]}}
+
+numero de posiciones reservadas 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00017}{17}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}\label{class_secuencia_enteros_a527e998480b192b935ffd17a2dff5cce}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!secuencia@{secuencia}}
+\index{secuencia@{secuencia}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{secuencia}{secuencia}}
+{\footnotesize\ttfamily int$\ast$ Secuencia\+Enteros\+::secuencia\hspace{0.3cm}{\ttfamily [private]}}
+
+memoria de almacenamiento 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00012}{12}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+\mbox{\Hypertarget{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}\label{class_secuencia_enteros_acb3fc8ae90a0749adeabb566e2cd2ea1}} 
+\index{SecuenciaEnteros@{SecuenciaEnteros}!usados@{usados}}
+\index{usados@{usados}!SecuenciaEnteros@{SecuenciaEnteros}}
+\doxysubsubsection{\texorpdfstring{usados}{usados}}
+{\footnotesize\ttfamily int Secuencia\+Enteros\+::usados\hspace{0.3cm}{\ttfamily [private]}}
+
+contador de datos usados 
+
+Definition at line \mbox{\hyperlink{secuencia_enteros_8h_source_l00022}{22}} of file \mbox{\hyperlink{secuencia_enteros_8h_source}{secuencia\+Enteros.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{secuencia_enteros_8h}{secuencia\+Enteros.\+h}}\item 
+src/\mbox{\hyperlink{secuencia_enteros_8cpp}{secuencia\+Enteros.\+cpp}}\end{DoxyCompactItemize}
