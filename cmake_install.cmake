@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/gte/mgomez/ownCloud/desarrollo/infdiag/busquedaSecuencia/busquedaSecuencia/test/cmake_install.cmake")
+  include("/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
