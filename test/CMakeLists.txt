@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(inicio_julio_2021_cmake)
+project(busquedaSecuencia)
 
 set(CMAKE_CXX_STANDARD 14)
 

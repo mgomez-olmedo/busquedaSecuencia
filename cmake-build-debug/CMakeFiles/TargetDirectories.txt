@@ -1,0 +1,10 @@
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/CMakeFiles/principal.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/testSecuencia.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/testDiagrama.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/testLector.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/testVariable.dir
+/home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug/test/CMakeFiles/testMatriz.dir

@@ -1,0 +1,4 @@
+/home/gte/mgomez/software/clion-2019.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/gte/mgomez/software/clion-2019.3/bin/ninja/linux/ninja -G Ninja /home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gte/mgomez/ownCloud/desarrollo/infdiag/codigoGithub/busquedaSecuencia/cmake-build-debug
