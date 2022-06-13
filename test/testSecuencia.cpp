@@ -1,4 +1,5 @@
 #include "secuenciaEnteros.h"
+#include "secuenciaOperaciones.h"
 
 using namespace std;
 
@@ -24,4 +25,26 @@ int main(int argc, char *argv[]){
 
    cout << "tras quitar valor 1 --------------- " << endl;
    cout << secuencia;
+
+   secuencia.invertir();
+   cout << "tras invertir --------------- " << endl;
+   cout << secuencia;
+
+   SecuenciaEnteros secuencia2(secuencia);
+
+   cout << "Secuencia2 copia de Secuencia" << secuencia2;
+   secuencia2.invertir();
+   cout << "Inversion de secuencia2" << secuencia2;
+
+   cout << "*****************************************************************";
+   cout << "\n***+++++++++++++++++ SecuenciaOperaciones ++++++++++++++++++++***\n";
+   cout << "*****************************************************************\n";
+
+   SecuenciaOperaciones ops;
+   Operacion op (TIPOOPERACION::BORRADO, 15.0, "var");
+   ops += op;
+
+   cout << "Operacion\n" << op;
+   cout << "Operaciones\n" << ops;
+
 }

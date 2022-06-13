@@ -71,7 +71,7 @@ void AStarSearch::buscar(){
 std::ostream & operator<<(std::ostream & flujo, const AStarSearch & objeto){
    // se muestra el estado correspondiente a la raiz
    if(objeto.raiz != 0){
-      cout << "-------------------- cola de estados pos explorar -----------------" << endl;
+      cout << "-------------------- cola de estados por explorar -----------------" << endl;
       cout << objeto.abiertos;
    }
 

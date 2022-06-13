@@ -426,7 +426,8 @@ public:
    void agregarArcosMemoria();
 
    /**
-    * metodo para evaluarKong el diagrama usando el criterio de kong
+    * metodo para evaluarKong el diagrama
+    * usando el criterio de kong
     * (elegir la operacion de menor coste)
     */
    void evaluarKong();

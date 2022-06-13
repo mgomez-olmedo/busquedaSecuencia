@@ -156,7 +156,7 @@ double Diagrama::obtenerTamanno() const {
 
          // considera las cardinalidades de cada uno de los padres
          for(int j=0; j < padresVar.obtenerTamanno(); j++){
-            cout << "   considerando padra: " << variables[padresVar[j]].obtenerNombre() << endl;
+            cout << "   considerando padre: " << variables[padresVar[j]].obtenerNombre() << endl;
             cout << "   cardinalidad: " << cardinalidades[padresVar[j]] << endl;
             tamVariable *= cardinalidades[padresVar[j]];
          }
@@ -827,7 +827,7 @@ void Diagrama::evaluarKong() {
  * @return
  */
 SecuenciaOperaciones Diagrama::determinarOperaciones(){
-   SecuenciaOperaciones candidatas;
+   SecuenciaOperaciones  candidatas;
 
    // se determina si hay candidatos e eliminacion de nodos de azar
    SecuenciaEnteros nodos = determinarCandidatosAzar();

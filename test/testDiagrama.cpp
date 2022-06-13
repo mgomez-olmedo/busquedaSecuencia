@@ -13,7 +13,7 @@ using namespace std;
  */
 int main(int argc, char * argv[]){
    // se crea objeto de la clase Lector para un archivo
-   Lector lector("./data/car.pro");
+   Lector lector("../../data/car.pro");
 
    // se muestra el diagrama generado
    Diagrama diag = lector.obtenerDiagrama();
@@ -39,8 +39,11 @@ int main(int argc, char * argv[]){
 
    // se muestra el diagrama final para var la secuencia de
    // operaciones
+   cout << "\n*********************************************************************\n\n";
    cout << diag;
 
+
+   cout << "\n*********************************************************************\n\n";
    // se vuelve a leer para probar la operacion de relajacion
    diag = lector.obtenerDiagrama();
    cout << endl << endl;

@@ -241,7 +241,7 @@ void Estado::ejecutarOperacion(){
 
    // el maximo entre el valor de h del estado padre y el valor
    // del tamaño del diagrama resultante se asigna a f
-   cout << "   se obtiene el maximo entre el tamaño y el valor de f" << endl;
+   cout << "   se obtiene el maximo entre el tamanno y el valor de f" << endl;
    f = diagrama.obtenerTamanno();
    if(padre != 0) {
       f = obtenerMaximo(padre->f, diagrama.obtenerTamanno());
@@ -271,5 +271,5 @@ void Estado::ejecutarOperacion(){
 
    // se asigna el valor de coste
    coste = f + h;
-   cout << "   cotse global del estado: " << coste << endl;
+   cout << "   coste global del estado: " << coste << endl;
 }

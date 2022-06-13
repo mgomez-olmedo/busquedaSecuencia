@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="busquedaSecuencia"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="principal">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/principal.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/./include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 principal"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="principal/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/principal.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/./include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 principal/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testDiagrama">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testDiagrama.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testDiagrama"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testDiagrama/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testDiagrama.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testDiagrama/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testVariable">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testVariable.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testVariable"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testVariable/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testVariable.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testVariable/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testSecuencia">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testSecuencia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testSecuencia"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testSecuencia/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testSecuencia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testSecuencia/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMatriz">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testMatriz.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testMatriz"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMatriz/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testMatriz.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testMatriz/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testLector">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testLector.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testLector"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testLector/fast">
+				<Option output="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/testLector.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testLector/fast"/>
+					<CompileFile command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/aStarSearch.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/colaPrioridad.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/diagrama.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/lector.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/matriz.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/opcionInversion.h">
+			<Option target="testDiagrama"/>
+			<Option target="testSecuencia"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/operacion.h">
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/secuenciaEnteros.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/secuenciaOperaciones.h">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/utilidades.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/variable.h">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/aStarSearch.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/colaPrioridad.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/diagrama.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/estado.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/lector.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/matriz.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testMatriz"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/principal.cpp">
+			<Option target="principal"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/secuenciaEnteros.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testSecuencia"/>
+			<Option target="testMatriz"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/secuenciaOperaciones.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/utilidades.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/src/variable.cpp">
+			<Option target="principal"/>
+			<Option target="testDiagrama"/>
+			<Option target="testVariable"/>
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/testDiagrama.cpp">
+			<Option target="testDiagrama"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/testLector.cpp">
+			<Option target="testLector"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/testMatriz.cpp">
+			<Option target="testMatriz"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/testSecuencia.cpp">
+			<Option target="testSecuencia"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/testVariable.cpp">
+			<Option target="testVariable"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
