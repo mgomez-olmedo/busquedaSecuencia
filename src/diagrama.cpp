@@ -604,7 +604,6 @@ vector<OpcionInversion> Diagrama::determinarCandidatosInversion() const {
                opcion += sucesoresAzar[j];
             }
          }
-
          // se agrega la opcion al vector de opciones
          opciones.push_back(opcion);
       }
@@ -672,7 +671,7 @@ void Diagrama::eliminarNodoDecision(int idNodo) {
  * @param idDestino
  */
 void Diagrama::invertir(int idOrigen, int idDestino) {
-   // se buscan los padres del origen y se agrean a destino
+   // se buscan los padres del origen y se agregan a destino
    SecuenciaEnteros padresAzarOrigen = obtenerPadres(idOrigen, AZAR);
    SecuenciaEnteros padresDecisionOrigen = obtenerPadres(idOrigen, DECISION);
 
@@ -725,6 +724,7 @@ void Diagrama::invertirEliminar(const OpcionInversion & opcion){
       // se realiza la inversion
       invertir(opcion.obtenerIdObjetivo(), opcion[i]);
    }
+   inversionesRealizadas.push_back(opcion);
 }
 
 
@@ -1214,24 +1214,62 @@ int Diagrama::seleccionarMejorOpcionKong(SecuenciaEnteros opciones, TIPOVARIABLE
  */
 OpcionInversion Diagrama::seleccionarMejorOpcionInversionKong(const std::vector<OpcionInversion> &opciones) {
    OpcionInversion opcionMinimo;
+   int size = opciones.size();
 
    // se crean las operaciones de diagramas para cada una de las alternativas
-   double *costes = new double[opciones.size()];
-   OpcionInversion *opcionesKong = new OpcionInversion[opciones.size()];
+   double *costes = new double[size];
+   OpcionInversion *opcionesKong = new OpcionInversion[size];
 
    // se realizan las diferentes alternativas
-   for (int i = 0; i < opciones.size(); i++) {
+   for (int i = 0; i < size; i++) {
       opcionesKong[i] = evaluarInversionKong(opciones.at(i));
       costes[i] = opcionesKong[i].obtenerCoste();
       cout << "  evaluada inversion con " << opcionesKong[i] << " coste: " << costes[i] << endl;
    }
 
    // se obtiene el minimo
-   int minimo = buscarMinimo(costes, opciones.size());
+   int minimo = buscarMinimo(costes, size);
    cout << " minimo coste: " << minimo << endl;
 
    // se selecciona la mejor opcion de inversion
    opcionMinimo = opcionesKong[minimo];
+
+    // se comprueban las alternativas que previamente se han invertido a la inversa y se descartan
+    for(int i = 0; i < inversionesRealizadas.size(); i++){
+        if(inversionesRealizadas[i][0] == opcionMinimo.obtenerIdObjetivo() &&
+            inversionesRealizadas[i].obtenerIdObjetivo() == opcionMinimo[0]){
+            double *nuevoCostes = new double[size-1];
+            OpcionInversion *nuevoOpcionesKong = new OpcionInversion[opciones.size()-1];
+
+            // se asigna la información acerca de las alternativas excepto la ya realizada
+            for(int j = 0, in = 0; j < size; j++){
+                if(j != minimo){
+                    // se copian los datos
+                    nuevoCostes[in] = costes[j];
+                    nuevoOpcionesKong[in] = opcionesKong[j];
+
+                    // se incrementa el valor de in
+                    in++;
+                }
+            }
+
+            // se borra el espacio previo
+            delete[] costes;
+            delete[] opcionesKong;
+
+            // se apuntan los punteros originales al nuevo espacio
+            costes = nuevoCostes;
+            opcionesKong = nuevoOpcionesKong;
+            size--;
+
+            // se vuelve a obtener el mínimo
+            minimo = buscarMinimo(costes, size);
+            cout << " operacion ya realizada, se recalcula el minimo: " << minimo << endl;
+
+            // se selecciona de nuevo la mejor opcion de inversion
+            opcionMinimo = opcionesKong[minimo];
+        }
+    }
 
    // se eliminan las estructuras dinamicas usadas
    delete[] opcionesKong;

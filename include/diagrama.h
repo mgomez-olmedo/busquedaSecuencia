@@ -65,6 +65,11 @@ private:
    SecuenciaOperaciones solucion;
 
    /**
+    * vector de inversiones realizadas
+    */
+   std::vector<OpcionInversion> inversionesRealizadas;
+
+   /**
     * metodo privado para liberar espacio
     */
    void liberarEspacio();
