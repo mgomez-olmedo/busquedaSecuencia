@@ -1215,6 +1215,7 @@ int Diagrama::seleccionarMejorOpcionKong(SecuenciaEnteros opciones, TIPOVARIABLE
 OpcionInversion Diagrama::seleccionarMejorOpcionInversionKong(const std::vector<OpcionInversion> &opciones) {
    OpcionInversion opcionMinimo;
    int size = opciones.size();
+   bool encontrado = false;
 
    // se crean las operaciones de diagramas para cada una de las alternativas
    double *costes = new double[size];
@@ -1235,7 +1236,7 @@ OpcionInversion Diagrama::seleccionarMejorOpcionInversionKong(const std::vector<
    opcionMinimo = opcionesKong[minimo];
 
     // se comprueban las alternativas que previamente se han invertido a la inversa y se descartan
-    for(int i = 0; i < inversionesRealizadas.size(); i++){
+    for(int i = 0; i < inversionesRealizadas.size() && !encontrado; i++){
         if(inversionesRealizadas[i][0] == opcionMinimo.obtenerIdObjetivo() &&
             inversionesRealizadas[i].obtenerIdObjetivo() == opcionMinimo[0]){
             double *nuevoCostes = new double[size-1];
@@ -1268,6 +1269,8 @@ OpcionInversion Diagrama::seleccionarMejorOpcionInversionKong(const std::vector<
 
             // se selecciona de nuevo la mejor opcion de inversion
             opcionMinimo = opcionesKong[minimo];
+
+            encontrado = true;
         }
     }
 
