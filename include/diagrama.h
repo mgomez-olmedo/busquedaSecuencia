@@ -3,6 +3,7 @@
 #define DIAGRAMA_H
 
 #include<iostream>
+#include<algorithm>
 
 #include "variable.h"
 #include "matriz.h"

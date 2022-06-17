@@ -136,6 +136,14 @@ CMakeFiles/principal.dir/src/aStarSearch.cpp.obj: \
  D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/colaPrioridad.h \
  D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/estado.h \
  D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/diagrama.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
+ D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
  D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/variable.h \
  D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/include/matriz.h \
  D:/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
