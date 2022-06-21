@@ -40,26 +40,29 @@ void AStarSearch::incluirAbierto(Estado & estado){
  * metodo general de busqueda
  */
 void AStarSearch::buscar(){
-   // se extrae el primer elemento de la cola con prioridad
-   Estado objetivo = abiertos.extraer();
+   // mientras haya nodos en la cola de prioridad abiertos se extrae nodo objetivo y se explora
+   while (abiertos.obtenerNumeroEstados() != 0){
+       // se extrae el primer elemento de la cola con prioridad
+       Estado objetivo = abiertos.extraer();
 
-   // se muestra el contenido del estado
-   cout << "----------------- estado objetivo de la busqueda --------------" << endl;
-   cout << objetivo;
-   cout << "---------------------------------------------------------------" << endl;
+       // se muestra el contenido del estado
+       cout << "----------------- estado objetivo de la busqueda --------------" << endl;
+       cout << objetivo;
+       cout << "---------------------------------------------------------------" << endl;
 
-   // se llama al metodo explorar sobre el estado para continuar el
-   // proceso de busqueda
-   cout << "llamada a explorar sobre el objetivo" << endl;
-   objetivo.explorar();
+       // se llama al metodo explorar sobre el estado para continuar el
+       // proceso de busqueda
+       cout << "llamada a explorar sobre el objetivo" << endl;
+       objetivo.explorar();
 
-   // los hijos del nodo objetivo se insertan en la cola de abiertos
-   for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
-      abiertos.operator+=(objetivo[i]);
+       // los hijos del nodo objetivo se insertan en la cola de abiertos
+       for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
+           abiertos.operator+=(objetivo[i]);
+       }
+
+       // se muestra el contenido del objeto
+       cout << *this;
    }
-
-   // se muestra el contenido del objeto
-   cout << *this;
 }
 
 /**
