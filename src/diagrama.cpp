@@ -579,6 +579,28 @@ vector<OpcionInversion> Diagrama::determinarCandidatosInversion() const {
    SecuenciaEnteros padres = obtenerPadres(indiceNodoUtilidad, AZAR);
    cout << " padres del nodo de valor candidatos de inversion: " << padres << endl;
 
+   SecuenciaEnteros padresAux = padres;
+
+   for (int i = 0; i < padresAux.obtenerTamanno(); i++){
+       // ninguno de sus hijos puede ser un nodo de decision
+       SecuenciaEnteros hijosVar = hijos(padresAux[i]);
+
+       // se comprueba la lista de hijos para descartar otros nodos
+       // de decision como sucesores
+       bool hijoDecision = false;
+       for(int j=0; j < hijosVar.obtenerTamanno() && !hijoDecision; j++){
+           if(variables[hijosVar[j]].obtenerTipo() == DECISION){
+               hijoDecision = true;
+           }
+       }
+
+       // si el nodo azar tiene como hijo un nodo decisión se descarta de la lista
+       // de padres del nodo utilidad
+       if(hijoDecision){
+           padres -= padresAux[i];
+       }
+   }
+
    // para cada uno de ellos se obtienen sus padres de tipo
    // AZAR, que determinan las inversiones a realizar
    for (int i = 0; i < padres.obtenerTamanno(); i++) {
