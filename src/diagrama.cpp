@@ -1238,119 +1238,121 @@ OpcionInversion Diagrama::seleccionarMejorOpcionInversionKong(const std::vector<
    OpcionInversion opcionMinimo;
    int size = opciones.size();
    bool encontrado = false;
+   if (size != 0){
+       // se crean las operaciones de diagramas para cada una de las alternativas
+       double *costes = new double[size];
+       OpcionInversion *opcionesKong = new OpcionInversion[size];
 
-   // se crean las operaciones de diagramas para cada una de las alternativas
-   double *costes = new double[size];
-   OpcionInversion *opcionesKong = new OpcionInversion[size];
-
-   // se realizan las diferentes alternativas
-   for (int i = 0; i < size; i++) {
-      opcionesKong[i] = evaluarInversionKong(opciones[i]);
-      costes[i] = opcionesKong[i].obtenerCoste();
-      cout << "  evaluada inversion con " << opcionesKong[i] << " coste: " << costes[i] << endl;
-   }
-
-   // se obtiene el minimo
-   int minimo = buscarMinimo(costes, size);
-   cout << " minimo coste: " << minimo << endl;
-
-   // se selecciona la mejor opcion de inversion
-   opcionMinimo = opcionesKong[minimo];
-
-   if(size > 1){
-       // se comprueba si la mejor opción ya ha sido invertida de manera contrapuesta,
-       // en ese caso, el flag encontrado se pone a true
-       for(int i = 0; i < inversionesRealizadas.size() && !encontrado; i++){
-           if(inversionesRealizadas[i][0] == opcionMinimo.obtenerIdObjetivo() &&
-              inversionesRealizadas[i].obtenerIdObjetivo() == opcionMinimo[0]){
-               encontrado = true;
-           }
+       // se realizan las diferentes alternativas
+       for (int i = 0; i < size; i++) {
+           opcionesKong[i] = evaluarInversionKong(opciones[i]);
+           costes[i] = opcionesKong[i].obtenerCoste();
+           cout << "  evaluada inversion con " << opcionesKong[i] << " coste: " << costes[i] << endl;
        }
 
-       if(encontrado){
-           vector<int> opcionesYaInvertidas;
-           bool longevaEncontrada = false;
-           bool todasInvertidas = true;
-           bool found = false;
-           int opcionLongeva;
-           // comprobamos cuantas opciones ya han sido tomadas como inversión:
-           // - en caso de que todas hayan sido ya tomadas de manera contrapuesta como inversión se escoge la menos reciente
-           // - si esto por lo contrario no ocurre, se eliminan las opciones ya tomadas y se hace el mínimo sobre las restantes
-           for(int i = 0; i < size; i++){
-               for(int j = 0; j < inversionesRealizadas.size() && !found; j++){
-                   if(inversionesRealizadas[j][0] == opcionesKong[i].obtenerIdObjetivo() &&
-                      inversionesRealizadas[j].obtenerIdObjetivo() == opcionesKong[i][0]){
-                       if(longevaEncontrada == false){
-                           longevaEncontrada = true;
-                           opcionLongeva = i;
+       // se obtiene el minimo
+       int minimo = buscarMinimo(costes, size);
+       cout << " minimo coste: " << minimo << endl;
+
+       // se selecciona la mejor opcion de inversion
+       opcionMinimo = opcionesKong[minimo];
+
+       if(size > 1){
+           // se comprueba si la mejor opción ya ha sido invertida de manera contrapuesta,
+           // en ese caso, el flag encontrado se pone a true
+           for(int i = 0; i < inversionesRealizadas.size() && !encontrado; i++){
+               if(inversionesRealizadas[i][0] == opcionMinimo.obtenerIdObjetivo() &&
+                  inversionesRealizadas[i].obtenerIdObjetivo() == opcionMinimo[0]){
+                   encontrado = true;
+               }
+           }
+
+           if(encontrado){
+               vector<int> opcionesYaInvertidas;
+               bool longevaEncontrada = false;
+               bool todasInvertidas = true;
+               bool found = false;
+               int opcionLongeva;
+               // comprobamos cuantas opciones ya han sido tomadas como inversión:
+               // - en caso de que todas hayan sido ya tomadas de manera contrapuesta como inversión se escoge la menos reciente
+               // - si esto por lo contrario no ocurre, se eliminan las opciones ya tomadas y se hace el mínimo sobre las restantes
+               for(int i = 0; i < size; i++){
+                   for(int j = 0; j < inversionesRealizadas.size() && !found; j++){
+                       if(inversionesRealizadas[j][0] == opcionesKong[i].obtenerIdObjetivo() &&
+                          inversionesRealizadas[j].obtenerIdObjetivo() == opcionesKong[i][0]){
+                           if(longevaEncontrada == false){
+                               longevaEncontrada = true;
+                               opcionLongeva = i;
+                           }
+                           opcionesYaInvertidas.push_back(i);
+                           found = true;
                        }
-                       opcionesYaInvertidas.push_back(i);
-                       found = true;
+                   }
+                   if(!found){
+                       todasInvertidas = false;
+                   }
+                   else{
+                       found = false;
                    }
                }
-               if(!found){
-                   todasInvertidas = false;
+
+               if(todasInvertidas){
+                   opcionMinimo = opcionesKong[opcionLongeva];
                }
                else{
-                   found = false;
-               }
-           }
+                   double *nuevoCostes = new double[size-opcionesYaInvertidas.size()];
+                   OpcionInversion *nuevoOpcionesKong = new OpcionInversion[size-opcionesYaInvertidas.size()];
+                   bool yaRealizada = false;
+                   int newSize = 0;
 
-           if(todasInvertidas){
-                opcionMinimo = opcionesKong[opcionLongeva];
-           }
-           else{
-               double *nuevoCostes = new double[size-opcionesYaInvertidas.size()];
-               OpcionInversion *nuevoOpcionesKong = new OpcionInversion[size-opcionesYaInvertidas.size()];
-               bool yaRealizada = false;
-               int newSize = 0;
+                   // ordenamos el vector de índices de opciones ya invertidas
+                   std::sort(opcionesYaInvertidas.begin(), opcionesYaInvertidas.end());
 
-               // ordenamos el vector de índices de opciones ya invertidas
-               std::sort(opcionesYaInvertidas.begin(), opcionesYaInvertidas.end());
-
-               // se asigna la información acerca de las alternativas excepto las ya realizadas
-               for(int i = 0; i < size; i++){
-                   for(int j = 0; j < opcionesYaInvertidas.size() && !yaRealizada; j++){
-                       if(i == opcionesYaInvertidas[j]){
-                            yaRealizada = true;
+                   // se asigna la información acerca de las alternativas excepto las ya realizadas
+                   for(int i = 0; i < size; i++){
+                       for(int j = 0; j < opcionesYaInvertidas.size() && !yaRealizada; j++){
+                           if(i == opcionesYaInvertidas[j]){
+                               yaRealizada = true;
+                           }
                        }
+                       if(!yaRealizada){
+                           // se copian los datos
+                           nuevoCostes[newSize] = costes[i];
+                           nuevoOpcionesKong[newSize] = opcionesKong[i];
+                           newSize++;
+                       }
+                       yaRealizada = false;
                    }
-                   if(!yaRealizada){
-                       // se copian los datos
-                       nuevoCostes[newSize] = costes[i];
-                       nuevoOpcionesKong[newSize] = opcionesKong[i];
-                       newSize++;
-                   }
-                   yaRealizada = false;
+
+                   // se asigna nuevo tamaño(size)
+                   newSize;
+
+                   // se borra el espacio previo
+                   delete[] costes;
+                   delete[] opcionesKong;
+
+                   // se apuntan los punteros originales al nuevo espacio
+                   costes = nuevoCostes;
+                   opcionesKong = nuevoOpcionesKong;
+
+                   // se vuelve a obtener el mínimo
+                   minimo = buscarMinimo(costes, newSize);
+                   cout << " operacion ya realizada, se recalcula el minimo: " << minimo << endl;
+
+                   // se selecciona de nuevo la mejor opcion de inversion
+                   opcionMinimo = opcionesKong[minimo];
                }
-
-               // se asigna nuevo tamaño(size)
-               newSize;
-
-               // se borra el espacio previo
-               delete[] costes;
-               delete[] opcionesKong;
-
-               // se apuntan los punteros originales al nuevo espacio
-               costes = nuevoCostes;
-               opcionesKong = nuevoOpcionesKong;
-
-               // se vuelve a obtener el mínimo
-               minimo = buscarMinimo(costes, newSize);
-               cout << " operacion ya realizada, se recalcula el minimo: " << minimo << endl;
-
-               // se selecciona de nuevo la mejor opcion de inversion
-               opcionMinimo = opcionesKong[minimo];
            }
        }
+
+       // se eliminan las estructuras dinamicas usadas
+       delete[] opcionesKong;
+       delete[] costes;
+
+       // se devuelve la opcion de inversion seleccionada (que puede ser
+       // objeto nulo en caso de que no haya opciones de inversion)
    }
 
-   // se eliminan las estructuras dinamicas usadas
-   delete[] opcionesKong;
-   delete[] costes;
-
-   // se devuelve la opcion de inversion seleccionada (que puede ser
-   // objeto nulo en caso de que no haya opciones de inversion)
    return opcionMinimo;
 }
 

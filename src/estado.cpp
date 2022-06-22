@@ -93,7 +93,7 @@ void Estado::explorar(){
 
       // el estado se asigna como hijo
       hijos[i] = nuevo;
-      //numeroHijos++;
+      numeroHijos++;
       cout << "   fin de tratamiento de alternativa " << i << endl;
       cout << "------------------------------------------------" << endl;
    }
