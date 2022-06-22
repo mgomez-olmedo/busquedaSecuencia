@@ -57,7 +57,7 @@ void AStarSearch::buscar(){
 
        // los hijos del nodo objetivo se insertan en la cola de abiertos
        for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
-           if(std::find(cerrado.begin(), cerrado.end(), objetivo[i]) != cerrado.end())
+           if(std::find(cerrado.begin(), cerrado.end(), objetivo[i]) == cerrado.end())
                 abiertos.operator+=(objetivo[i]);
        }
 

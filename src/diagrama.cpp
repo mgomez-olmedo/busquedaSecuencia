@@ -825,16 +825,17 @@ void Diagrama::evaluarKong() {
             // despues de invertir arcos
             vector<OpcionInversion> opciones = determinarCandidatosInversion();
             cout << " obteniendo inversiones posibles" << endl;
+            if (opciones.size() != 0){
+                // se selecciona la mejor alternativa si es necesario
+                OpcionInversion mejor = seleccionarMejorOpcionInversionKong(opciones);
+                cout << "-----------------------------------------" << endl;
+                cout << " opcion de inversion: " << mejor << endl;
+                cout << "-----------------------------------------" << endl;
 
-            // se selecciona la mejor alternativa si es necesario
-            OpcionInversion mejor = seleccionarMejorOpcionInversionKong(opciones);
-            cout << "-----------------------------------------" << endl;
-            cout << " opcion de inversion: " << mejor << endl;
-            cout << "-----------------------------------------" << endl;
-
-            // se realizan las inversiones y la eliminacion del nodo
-            // de azar correspondiente
-            invertirEliminar(mejor);
+                // se realizan las inversiones y la eliminacion del nodo
+                // de azar correspondiente
+                invertirEliminar(mejor);
+            }
          }
       }
    }
@@ -1132,6 +1133,19 @@ void Diagrama::eliminarEnlacesDecisiones(){
  * @param idNodo
  */
 void Diagrama::eliminarNodo(int idNodo) {
+    if(variables[idNodo].obtenerTipo() == AZAR){
+        // se obtienen los padres de idNodo
+        SecuenciaEnteros padresIdNodo = padres(idNodo);
+
+        // se establecen los enlaces entre los padresIdNodo y el
+        // nodo de utilidad
+        for (int i = 0; i < padresIdNodo.obtenerTamanno(); i++){
+            // se usa un método privado para almacenar la información
+            // de un enlace a partir de los ids de los nodos
+            asignarEnlace(padresIdNodo[i], indiceNodoUtilidad);
+        }
+    }
+
    // se elimina toda la informacion del nodo indicado
    int *nuevaListaIds = new int[numeroNodos - 1];
    Variable *nuevaVaribles = new Variable[numeroNodos - 1];
