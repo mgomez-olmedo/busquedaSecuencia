@@ -57,8 +57,12 @@ void AStarSearch::buscar(){
 
        // los hijos del nodo objetivo se insertan en la cola de abiertos
        for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
-           abiertos.operator+=(objetivo[i]);
+           if(std::find(cerrado.begin(), cerrado.end(), objetivo[i]) != cerrado.end())
+                abiertos.operator+=(objetivo[i]);
        }
+
+       // metemos el nodo objetivo evaluado en el vector de cerrados
+       cerrado.push_back(objetivo);
 
        // se muestra el contenido del objeto
        cout << *this;
