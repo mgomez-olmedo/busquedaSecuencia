@@ -46,5 +46,14 @@ int buscarMinimo(double * valores, int longitud);
  */
 double obtenerMaximo(double valor1, double valor2);
 
+/**
+ * metodo para comparar indices pasados como
+ * argumento
+ * @param index1
+ * @param index2
+ * @return
+ */
+bool comparar(int index1, int index2);
+
 #endif /* UTILIDADES_H */
 

@@ -95,6 +95,14 @@ public:
     }
 
     /**
+     * metodo de acceso al número de estados
+     * @return
+     */
+    int obtenerNumeroEstados() const{
+        return numeroEstados;
+    }
+
+    /**
      * operador de asignacion
      * @param origen
      * @return

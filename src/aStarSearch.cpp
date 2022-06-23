@@ -40,26 +40,33 @@ void AStarSearch::incluirAbierto(Estado & estado){
  * metodo general de busqueda
  */
 void AStarSearch::buscar(){
-   // se extrae el primer elemento de la cola con prioridad
-   Estado objetivo = abiertos.extraer();
+   // mientras haya nodos en la cola de prioridad abiertos se extrae nodo objetivo y se explora
+   while (abiertos.obtenerNumeroEstados() != 0){
+       // se extrae el primer elemento de la cola con prioridad
+       Estado objetivo = abiertos.extraer();
 
-   // se muestra el contenido del estado
-   cout << "----------------- estado objetivo de la busqueda --------------" << endl;
-   cout << objetivo;
-   cout << "---------------------------------------------------------------" << endl;
+       // se muestra el contenido del estado
+       cout << "----------------- estado objetivo de la busqueda --------------" << endl;
+       cout << objetivo;
+       cout << "---------------------------------------------------------------" << endl;
 
-   // se llama al metodo explorar sobre el estado para continuar el
-   // proceso de busqueda
-   cout << "llamada a explorar sobre el objetivo" << endl;
-   objetivo.explorar();
+       // se llama al metodo explorar sobre el estado para continuar el
+       // proceso de busqueda
+       cout << "llamada a explorar sobre el objetivo" << endl;
+       objetivo.explorar();
 
-   // los hijos del nodo objetivo se insertan en la cola de abiertos
-   for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
-      abiertos.operator+=(objetivo[i]);
+       // los hijos del nodo objetivo se insertan en la cola de abiertos
+       for(int i=0; i < objetivo.obtenerNumeroHijos(); i++){
+           if(std::find(cerrado.begin(), cerrado.end(), objetivo[i]) == cerrado.end())
+                abiertos.operator+=(objetivo[i]);
+       }
+
+       // metemos el nodo objetivo evaluado en el vector de cerrados
+       cerrado.push_back(objetivo);
+
+       // se muestra el contenido del objeto
+       cout << *this;
    }
-
-   // se muestra el contenido del objeto
-   cout << *this;
 }
 
 /**
@@ -71,7 +78,7 @@ void AStarSearch::buscar(){
 std::ostream & operator<<(std::ostream & flujo, const AStarSearch & objeto){
    // se muestra el estado correspondiente a la raiz
    if(objeto.raiz != 0){
-      cout << "-------------------- cola de estados pos explorar -----------------" << endl;
+      cout << "-------------------- cola de estados por explorar -----------------" << endl;
       cout << objeto.abiertos;
    }
 

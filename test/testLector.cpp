@@ -25,4 +25,4 @@ int main(int argc, char * argv[]){
    // se muestra el diagrama tras agregar los arcos de memoria
    cout << "diagrama tras agregar arcos de memoria" << endl;
    cout << diag;
-}
+ }

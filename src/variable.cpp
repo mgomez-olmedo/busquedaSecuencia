@@ -88,7 +88,23 @@ Variable & Variable::operator+=(const std::string & estado){
  * @param variable
  */
 std::ostream & operator<<(std::ostream & flujo, const Variable & variable) {
-   flujo << "Variable " << variable.nombre << " id: " << variable.id << " tipo: " << variable.tipo << endl;
+   flujo << "Variable " << variable.nombre << " id: " << variable.id;
+
+    switch (variable.tipo) {
+        case 0:
+            flujo << " tipo: BASURA" << endl;
+            break;
+        case 1:
+            flujo << " tipo: AZAR" << endl;
+            break;
+        case 2:
+            flujo << " tipo: DECISION" << endl;
+            break;
+        case 3:
+            flujo << " tipo: UTILIDAD" << endl;
+            break;
+    }
+
    flujo << "cardinalidad: " << variable.cardinalidad << endl;
    if(variable.cardinalidad != 0) {
       flujo << "   estados: ";

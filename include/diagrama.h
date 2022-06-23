@@ -3,6 +3,7 @@
 #define DIAGRAMA_H
 
 #include<iostream>
+#include<algorithm>
 
 #include "variable.h"
 #include "matriz.h"
@@ -63,6 +64,11 @@ private:
     * del diagrama
     */
    SecuenciaOperaciones solucion;
+
+   /**
+    * vector de inversiones realizadas
+    */
+   std::vector<OpcionInversion> inversionesRealizadas;
 
    /**
     * metodo privado para liberar espacio
@@ -426,7 +432,8 @@ public:
    void agregarArcosMemoria();
 
    /**
-    * metodo para evaluarKong el diagrama usando el criterio de kong
+    * metodo para evaluarKong el diagrama
+    * usando el criterio de kong
     * (elegir la operacion de menor coste)
     */
    void evaluarKong();

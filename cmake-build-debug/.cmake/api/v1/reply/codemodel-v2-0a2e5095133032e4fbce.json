@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-f18be1977b403cfd1a50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "busquedaSecuencia",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "principal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-principal-Debug-15cfb863cc739f5d94d4.json",
+					"name" : "principal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testDiagrama::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testDiagrama-Debug-8beb2453a075459d5622.json",
+					"name" : "testDiagrama",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testLector::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testLector-Debug-9228f6d8d72f431ab635.json",
+					"name" : "testLector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testMatriz::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testMatriz-Debug-7bef725a9013af6b3d5b.json",
+					"name" : "testMatriz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testSecuencia::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testSecuencia-Debug-904c265a5c1117f6aa84.json",
+					"name" : "testSecuencia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testVariable::@36f028580bb02cc8272a",
+					"jsonFile" : "target-testVariable-Debug-54a642ba9f4f27491a5b.json",
+					"name" : "testVariable",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia/cmake-build-debug",
+		"source" : "D:/MigueCc99/Escritorio/Universidad/TFG/busquedaSecuencia"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

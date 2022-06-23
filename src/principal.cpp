@@ -14,7 +14,7 @@ using namespace std;
  */
 int main(int argc, char * argv[]){
    // se crea objeto de la clase Lector para un archivo
-   Lector lector("./data/car.pro");
+   Lector lector("../data/car.pro");
    cout << "leida definicion del diagrama...." << endl;
 
    // se muestra el diagrama generado
@@ -29,4 +29,5 @@ int main(int argc, char * argv[]){
 
    // se inicia el proceso de busqueda
    search.buscar();
+
 }
